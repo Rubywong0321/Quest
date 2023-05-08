@@ -1,0 +1,76 @@
+body{
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-size:1rem;
+  background-color: #f5f5f5;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+main{
+  margin-top: 5em;
+}
+.w1180{
+  max-width: 1180px; 
+  width: 90%; 
+  margin: 0 auto;
+}
+
+div, section{
+  box-sizing: border-box;
+}
+.searchbox{
+  min-width: 400px;
+}
+.searchbox input{
+  width: 85%;
+}
+.searchbox button{
+  width: 15%;
+}
+.form-inline-block{
+  display: inline-block;
+  width: auto;
+}
+
+.formbox{
+  background-color: #fff;
+  box-shadow: 0 0 5px #ddd;
+  margin-bottom: 2em;
+}
+
+fieldset{
+  padding-bottom: 1em;
+}
+fieldset:nth-child(even){
+  background-color: #f7f7f7;
+}
+
+.accordion-button2:focus {
+  z-index: 3;
+  border-color: #fd7e14;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #fd7d142c;
+}
+.accordion-button2:not(.collapsed) {
+  color: #fd7e14;
+  box-shadow: inset 0 -1px 0 #fd7d142c;
+}
+
+
+
+.accordion-button3:focus {
+  z-index: 3;
+  border-color: #198754;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #1987543a;
+}
+.accordion-button3:not(.collapsed) {
+  color: #198754;
+  background-color: #e7f1ff;
+  box-shadow: inset 0 -1px 0 #1987541c;
+}
