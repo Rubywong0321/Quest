@@ -31,6 +31,11 @@
                                 回到最尾
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="＃">
+                                暫存
+                            </a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             快速前往
@@ -63,13 +68,13 @@
             <form class="formbox p-3">
                 <div class="formtitle">
                     <h1 class="fw-bold">建物及其基地產權調查表</h1>
-                    <p class="">
+                    <p class="text-danger">
                         請先檢視他項權利部之共同擔保地建號，如與此次委託出售之地建號不同，應一併調閱。
                     </p>
                 </div>
                 <fieldset class="row pt-3">
-                    <label class="col-sm-3 col-form-label" >
-                        1、本案地址
+                    <label class="col-sm-3 col-form-label fw-bold" >
+                        1.本案地址
                     </label>
                     <div class="col-sm-9">
                         <div class="row g-2">
@@ -101,21 +106,6 @@
                                     地址
                                 </span>
                                 
-                                <div class="col-3 col-sm-2 ">
-                                    <input type="text" class="form-control" >
-                                </div>
-                                <div class="col-3 col-sm-2">
-                                    <select class="form-select" aria-label="">
-                                        <option value="1">村</option>
-                                        <option value="2">里</option>
-                                    </select>
-                                </div>
-                                <div class="col-3 col-sm-2 ">
-                                    <input type="text" class="form-control" >
-                                </div>
-                                <div class="col-3 col-sm-1  col-form-label">
-                                    鄰
-                                </div> 
                                 <div class="col-3 col-sm-3 ">
                                     <input type="text" class="form-control" >
                                 </div>
@@ -199,34 +189,49 @@
                     </div>    
                 </fieldset>                    
                 <fieldset class="row pt-3">
-                    <label class="col-sm-3 col-form-label">
-                        2、登記用途
+                    <label class="col-sm-3 col-form-label fw-bold">
+                        2.登記用途
                     </label>
                     <div class="col col-sm-9">
-                        <select name="DropDownList3"  id="DropDownList3" t class="form-select" aria-label="">
-                            <option selected="selected" value="請選擇">請選擇</option>
-                            <option value="大樓">住宅大樓(11層含以上有電梯)</option>
-                            <option value="公寓">公寓(5樓含以下)</option>
-                            <option value="透天">透天厝</option>
-                            <option value="華廈">華廈(10層含以下有電梯)</option>
-                            <option value="車位">車位</option>
-                            <option value="套房">套房(1房(1廳)1衛)</option>
-                            <option value="預售屋">預售屋</option>
-                            <option value="店面">店面(店鋪)</option>
-                            <option value="商辦">辦公商業大樓</option>
-                            <option value="工廠">工廠</option>
-                            <option value="廠辦">廠辦</option>
-                            <option value="農舍">農舍</option>
-                            <option value="倉庫">倉庫</option>
+
+                        <select name="DropDownList19" class="form-select" id="DropDownList19">
+                            <option selected="selected" value="">請選擇</option>
+                            <option value="一般事務所">一般事務所</option>
+                            <option value="一樓店面，二樓住家用，地下室水箱，頂樓加蓋，這是測試資料">一樓店面，二樓住家用，地下室水箱，頂樓加蓋，這是測試資料</option>
                             <option value="土地">土地</option>
-                            <option value="其它">其他等型態</option>
-                        
+                            <option value="工業用">工業用</option>
+                            <option value="住家">住家</option>
+                            <option value="住家用">住家用</option>
+                            <option value="住家店面">住家店面</option>
+                            <option value="住家辦公">住家辦公</option>
+                            <option value="住家辦公店面">住家辦公店面</option>
+                            <option value="住商">住商</option>
+                            <option value="別墅">別墅</option>
+                            <option value="車位">車位</option>
+                            <option value="店面">店面</option>
+                            <option value="倉庫">倉庫</option>
+                            <option value="套房">套房</option>
+                            <option value="商業用">商業用</option>
+                            <option value="都可">都可</option>
+                            <option value="集合住宅">集合住宅</option>
+                            <option value="農地">農地</option>
+                            <option value="農舍使用">農舍使用</option>
+                            <option value="農業資材室">農業資材室</option>
+                            <option value="廠房">廠房</option>
+                            <option value="樓梯間停車空間住家">樓梯間停車空間住家</option>
+                            <option value="辦公">辦公</option>
+                            <option value="辦公店面">辦公店面</option>
+                            <option value="騎樓">騎樓</option>
+                            <option value="其他">其他</option> 
                         </select>
+                        <div class="col mb-3 pt-3">
+                            <input type="text" class="form-control" >
+                        </div>
                     </div>
                 </fieldset>
                 <fieldset class="row pt-3">
-                    <label class="col-sm-3 col-form-label">
-                    3、主要建材
+                    <label class="col-sm-3 col-form-label fw-bold">
+                    3.主要建材
                     </label>
                     <div class="col col-sm-9">
                         <select class="form-select" aria-label="">
@@ -244,8 +249,8 @@
                     </div>
                 </fieldset>
                 <fieldset class="row pt-3">
-                    <label class="col-sm-3 col-form-label">
-                        4、建築完成日期
+                    <label class="col-sm-3 col-form-label fw-bold">
+                        4.建築完成日期
                     </label>
                     <div class="col col-sm-9">
                         <div class="row g-2" >
@@ -273,9 +278,8 @@
                     </div> 
                     </div>
                 </fieldset>
-
                 <fieldset class="row pt-3">
-                    <label for="subject007" class="col-sm-3 col-form-label">
+                    <label for="subject007" class="col-sm-3 col-form-label fw-bold">
                         5.建號
                         <a href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
@@ -350,7 +354,7 @@
                         </div>
                 </fieldset>
                 <fieldset class="row pt-3">
-                        <label for="subject008" class="col-sm-3 col-form-label">
+                        <label for="subject008" class="col-sm-3 col-form-label fw-bold">
                             6.地號
                             <a href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
@@ -424,8 +428,9 @@
                         </div>
                 </fieldset>
                 <fieldset class="row pt-3">
-                        <label for="subject009" class="col-sm-3 col-form-label">
+                        <label for="subject009" class="col-sm-3 col-form-label fw-bold">
                             7.車位
+                            <small class="text-success">非必填</small>
                             <a href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
                                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
@@ -461,7 +466,7 @@
                     <form  class="accordion-body formbox  p-3">
                             <fieldset class="row mb-3 ">
                                 <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                    1.基地有無出租或出借之情事?
+                                    1.基地有無出租或出借之情事
                                     <small class="text-success">現調/問屋主</small>
                                 </legend>
                                 <div class="col-sm-9">
@@ -484,7 +489,7 @@
                             </fieldset>
                             <fieldset class="row mb-3 ">
                                 <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                    2.基地上有無供公眾通行的私有道路?
+                                    2.基地上有無供公眾通行的私有道路
                                     <small class="text-success">現調/問屋主/管委會</small>
                                 </legend>
                                 <div class="col-sm-9">
@@ -511,7 +516,7 @@
                             </fieldset>
                             <fieldset class="row pt-3">
                                 <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                    3.基地對外道路是否可通行？
+                                    3.基地對外道路是否可通行
                                     <br>
                                     <small class="text-success">持地籍圖比對/問屋主</small>
                                     
@@ -537,7 +542,7 @@
                             </fieldset>
                             <fieldset class="row pt-3">
                                 <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                    4.基地有無界址糾紛？
+                                    4.基地有無界址糾紛
                                     <small class="text-success">問屋主/管委會</small>
                                 </legend>
                                 <div class="col-sm-9">
@@ -559,7 +564,7 @@
                             </fieldset>
                             <fieldset class="row pt-3">
                                 <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                    5.基地是否為政府列管之山坡地住宅？
+                                    5.基地是否為政府列管之山坡地住宅
                                     <small class="text-success">問屋主/管委會</small>                                                                 
                                     <div>
                                         <a href="https://www.cpami.gov.tw/%E6%9C%80%E6%96%B0%E6%B6%88%E6%81%AF/%E6%A5%AD%E5%8B%99%E6%96%B0%E8%A8%8A/39-%E5%BB%BA%E7%AF%89%E7%AE%A1%E7%90%86%E7%B5%84/11036-%E7%9B%B4%E8%BD%84%E5%B8%82%E3%80%81%E7%B8%A3%EF%BC%88%E5%B8%82%EF%BC%89%E6%94%BF%E5%BA%9C%E5%B1%B1%E5%9D%A1%E5%9C%B0%E4%BD%8F%E5%AE%85%E6%9F%A5%E8%A9%A2%E6%9C%8D%E5%8B%99%E7%AA%97%E5%8F%A3.html" target="_blank">
@@ -598,7 +603,7 @@
                             </fieldset>
                             <fieldset class="row pt-3">
                                 <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                    6.基地之上、下方是否有捷運或其他運輸系統穿越或預定計畫？
+                                    6.基地之上、下方是否有捷運或其他運輸系統穿越或預定計畫
                                     <small class="text-success">現調/問屋主/土地謄本標示部</small>    
                                 </legend>
                                 <div class="col-sm-9">
@@ -619,7 +624,7 @@
                             </fieldset>
                             <fieldset class="row pt-3">
                                 <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                    7.基地有無被占用或他人無權使用情形?
+                                    7.基地有無被占用或他人無權使用情形
                                     <small class="text-success">持測量成果圖比對/問屋主/管委會</small>  
                                 </legend>
                                 <div class="col-sm-9">
@@ -846,7 +851,7 @@
                         </fieldset>
                         <fieldset class="row pt-3">
                                 <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                    8.建物或增建部分有無疑似占用或被占用情形？
+                                    8.建物或增建部分有無疑似占用或被占用情形
                                     <small class="text-success">持測量成果圖比對/問屋主</small>  
                                 </legend>
                                 <div class="col-sm-9">
@@ -880,10 +885,10 @@
                                             <div class="">
                                                 <input class="form-check-input" type="checkbox" name="subjectAJ" id="subject057" >
                                                 <label class="form-check-label " for="subject057">
-                                                    建物占用他人土地：
+                                                    建物遭他人占用
                                                     <div class="form-check ">
                                                         <label class="form-check-label  mb-2" for="subject058">
-                                                            占用地號
+                                                            占用者
                                                         </label>
                                                         <input type="text" class="form-control mb-2 form-control-sm form-inline-block" id="subject058">
                                                         <br>
@@ -916,7 +921,7 @@
                         </fieldset>
                         <fieldset class="row pt-3">
                                 <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                    9.本棟建物樓頂平台是否有裝設電信基地台？    
+                                    9.本棟建物樓頂平台是否有裝設電信基地台    
                                     <small class="text-success">親自上屋頂現調</small>                
                                 </legend>
                                 <div class="col-sm-9">
@@ -937,10 +942,19 @@
                         </fieldset>
                         <fieldset class="row pt-3">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                10.衛生下水道系統是否已施工完成？
+                                10.衛生下水道系統是否已施工完成
                                 <div>
+                                    <a href="https://ssowebmis.sew.gov.taipei/Fee.aspxapcode=Fee&lvl=1&itid=M_07" target="_blank">
+                                        台北
+                                    </a>/
+                                    <a href="https://sewer.ntpc.gov.tw/swggis/webouse/SearchPipeLikeForUser.aspx" target="_blank">
+                                        新北
+                                    </a>/
+                                    <a href="https://sewergis.kcg.gov.tw/" target="_blank">
+                                        高雄
+                                    </a>/
                                     <a href="https://sewergis.cpami.gov.tw/sewerweb/Map/PeopleMap" target="_blank">
-                                        內政部營建署下水道圖資
+                                        營建署下水道圖資
                                     </a>
                                 </div>                 
                             </legend>
@@ -966,7 +980,7 @@
                                     </label>
                                 </div>
                                 <div class="form-check mb-2">
-                                    <input class="form-check-input" type="checkbox" value="" id="subject069" >
+                                    <input class="form-check-input" type="radio" name="subjectAG" value="" id="subject069" >
                                     <label class="form-check-label" for="subject069">
                                         有，請附件說明。
                                     </label>
@@ -983,7 +997,7 @@
                         </fieldset>
                         <fieldset class="row pt-3">
                                 <legend class="col-form-label col-sm-3 pt-0 mb-3 fw-bold">
-                                    11.有無「規約以外」之其他特殊使用及限制？
+                                    11.有無「規約以外」之其他特殊使用及限制
                                     <small class="text-success">問屋主/管委會/鄰居</small>
                                 </legend>
                                 <div class="col-sm-9">
@@ -1033,7 +1047,7 @@
                         </fieldset>
                         <fieldset class="row pt-3">
                             <legend class="col-form-label col-sm-3 pt-0 mb-3">
-                                12.社區有無管理維護公司？
+                                12.社區有無管理維護公司
                                 <small class="text-success">依該年度揭露</small>
                             </legend>
                             <div class="col-sm-9">
@@ -1069,7 +1083,7 @@
                         </fieldset>
                         <fieldset class="row pt-3">
                             <legend class="col-form-label col-sm-3 pt-0 mb-3">
-                                13.是否有住戶規約？
+                                13.是否有住戶規約
                                 <small class="text-success">問管委會/管理人/屋主</small>
                             </legend>
                             <div class="col-sm-9">
@@ -1117,7 +1131,7 @@
                         </fieldset>
                         <fieldset class="row pt-3">
                             <legend class="col-form-label col-sm-3 pt-0 mb-3 fw-bold">
-                                14.本建物是否有約定專用、約定共用部
+                                14.本建物是否有約定專用、約定共用部分
                                 <small class="text-success">
                                     問管委會/管理人/屋主
                                 </small>
@@ -1186,12 +1200,13 @@
                                             <label class="form-check-label " for="">
                                                 其他 
                                             </label> 
+                                            <input type="text" class="form-control col-sm-2 form-inline-block"> 
                                             <select class="form-select form-control-sm form-inline-block" aria-label="">
                                                 <option selected>選擇</option>
                                                 <option value="1">約定專用</option>
                                                 <option value="2">約定共用</option>
                                             </select>
-                                            <input type="text" class=" form-control-sm  form-control "> 
+
                                         </div>
                                     </label>
                                 </div>
@@ -1248,16 +1263,16 @@
                                             </label> 
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="subjectGA" id="" value="option1">
+                                            <input class="form-check-input" type="checkbox" name="subjectGG" id="" value="option1">
                                             <label class="form-check-label " for="">
                                                 其他 
                                             </label> 
+                                            <input type="text" class="form-control col-sm-2 form-inline-block"> 
                                             <select class="form-select form-control-sm form-inline-block" aria-label="">
                                                 <option selected>選擇</option>
                                                 <option value="1">約定專用</option>
                                                 <option value="2">約定共用</option>
-                                            </select> 
-                                            <input type="text" class=" form-control-sm  form-control "> 
+                                            </select>
                                         </div>
                                     </label>
                                 </div>
@@ -1265,7 +1280,7 @@
                         </fieldset>
                         <fieldset class="row pt-3">
                             <legend class="col-form-label col-sm-3 pt-0 mb-3 fw-bold">
-                                15.社區公共基金之數額、提撥及其運用方式？
+                                15.社區公共基金之數額、提撥及其運用方式
                                 <small class="text-success">
                                     問管委會/管理人/屋主
                                 </small>
@@ -1284,7 +1299,7 @@
                                     </label>
                                     <div>
                                         <div class="form-inline-block">
-                                        數額   
+                                        數額約   
                                         </div>
                                         <input type="text" class="form-control  form-control-sm  form-inline-block" id="">  
                                         <div class="form-inline-block">
@@ -1339,7 +1354,7 @@
                         </fieldset>
                         <fieldset class="row pt-3">
                             <legend class="col-form-label col-sm-3 pt-0 mb-3">
-                                16.有無管理費或清潔費等費用？
+                                16.有無管理費或清潔費等費用
                                 <small  class="text-success">
                                     問管委會/管理人/屋主
                                 </small>
@@ -1518,7 +1533,7 @@
                         </fieldset>
                         <fieldset class="row pt-3">
                             <legend class="col-form-label col-sm-3 pt-0 mb-3 fw-bold">
-                                17.社區有無管理組織及其管理方式？
+                                17.社區有無管理組織及其管理方式
                                 <small class="text-success">問管委會/管理人/屋主</small>
                             </legend>
                             <div class="col-sm-9">
@@ -1563,7 +1578,7 @@
                         </fieldset>
                         <fieldset class="row pt-3">
                             <legend class="col-form-label col-sm-3 pt-0 mb-3 fw-bold">
-                                18.電梯是否有張貼合格認證標章？
+                                18.電梯是否有張貼合格認證標章
                                 <small class="text-success">親自進電梯現調</small>
                             </legend>
                             <div class="col-sm-9">
@@ -1779,7 +1794,7 @@
                                                 </div>
                                                 <div class="">
                                                     <label class="form-check-label" for="subject1">
-                                                            是否騰空交屋?
+                                                            是否騰空交屋
                                                         <div class="form-check">
                                                                 <input class="form-check-input" type="radio" name="subjectEC" id="subject1" value="option1" >
                                                                 <label class="form-check-label" for="subject1">
@@ -1991,19 +2006,19 @@
                                     <label class="form-check-label" for="subject1">
                                         否
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="subjectCC" id="subject1" value="option1" >
+                                            <input class="form-check-input" type="radio" name="subjectCC" id="subject1" value="option1" >
                                             <label class="form-check-label " for="subject1">
                                                 使用地下水。
                                             </label> 
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="subjectCC" id="subject1" value="option1" >
+                                            <input class="form-check-input" type="radio" name="subjectCC" id="subject1" value="option1" >
                                             <label class="form-check-label " for="subject1">
                                                 使用山泉水。
                                             </label> 
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="subjectCC" id="subject1" value="option1" >
+                                            <input class="form-check-input" type="radio" name="subjectCC" id="subject1" value="option1" >
                                             <label class="form-check-label " for="subject1">
                                                 其他無法正常使用狀況
                                                 <div>
@@ -2034,13 +2049,13 @@
                                     <label class="form-check-label" for="subject1">
                                         否
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="subjectCC" id="subject1" value="option1" >
+                                            <input class="form-check-input" type="radio" name="subjectCC" id="subject1" value="option1" >
                                             <label class="form-check-label " for="subject1">
                                                 無電錶
                                             </label> 
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="subjectCC" id="subject1" value="option1" >
+                                            <input class="form-check-input" type="radio" name="subjectCC" id="subject1" value="option1" >
                                             <label class="form-check-label " for="subject1">
                                                 與他戶共用電錶
                                             </label> 
@@ -2066,25 +2081,25 @@
                                     <label class="form-check-label" for="subject1">
                                         否
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="subjectCC" id="subject1" value="option1" >
+                                            <input class="form-check-input" type="radio" name="subjectCC" id="subject1" value="option1" >
                                             <label class="form-check-label " for="subject1">
                                                 使用桶裝瓦斯
                                             </label> 
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="subjectCC" id="subject1" value="option1" >
+                                            <input class="form-check-input" type="radio" name="subjectCC" id="subject1" value="option1" >
                                             <label class="form-check-label " for="subject1">
                                                 無瓦斯，屋主願意負擔天然瓦斯裝置費用。
                                             </label> 
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="subjectCC" id="subject1" value="option1" >
+                                            <input class="form-check-input" type="radio" name="subjectCC" id="subject1" value="option1" >
                                             <label class="form-check-label " for="subject1">
                                                 無瓦斯，屋主不負擔天然瓦斯裝置費用。
                                             </label> 
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="subjectCC" id="subject1" value="option1" >
+                                            <input class="form-check-input" type="radio" name="subjectCC" id="subject1" value="option1" >
                                             <label class="form-check-label " for="subject1">
                                                 無瓦斯，屋主未表達是否負擔天然瓦斯裝置費用。
                                             </label> 
@@ -2102,13 +2117,13 @@
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="subjectAA" id="subject1" value="option1" >
                                     <label class="form-check-label" for="subject1">
-                                        是
+                                        否
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="subjectAA" id="subject1" value="option1" >
                                     <label class="form-check-label" for="subject1">
-                                        否
+                                        是
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" name="subjectAA" id="subject1" value="option1" >
                                             <label class="form-check-label" for="subject1">
@@ -2959,7 +2974,7 @@
                                             問屋主/網路查詢各縣市「違建查報」公開資訊/致電工務局
                                         </small>
                                         <div>
-                                            <a href="https://tccmoapply.dba.tcg.gov.tw/tccmoapply/maliapp/asp/aspsqu01.do?node=031b24b354a5396aac3350905b657d7a" target="_blank">
+                                            <a href="https://tccmoapply.dba.tcg.gov.tw/tccmoapply/maliapp/asp/aspsqu01.donode=031b24b354a5396aac3350905b657d7a" target="_blank">
                                                 台北
                                             </a> /
                                             <a href="https://icdc-pub.ntpc.gov.tw/ntpcpb/" target="_blank">
@@ -3022,7 +3037,7 @@
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="subjectEA" id="subject1" value="option1" >
                                     <label class="form-check-label" for="subject1">
-                                        否，是否為合法建物？須有建造執照、使用執照或買賣契約書等相關文件(依房屋稅籍證明記載)
+                                        否，是否為合法建物須有建造執照、使用執照或買賣契約書等相關文件(依房屋稅籍證明記載)
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="subjectEA" id="subject1" value="option1" >
                                             <label class="form-check-label" for="subject1">
@@ -3035,7 +3050,7 @@
                                                 否
                                                 <div class="form-check">
                                                     <div>
-                                                        因稅籍資料上所記載之權利人和現有使用人姓名不符，而賣方提出權利證明文件？(未辦理建物所有權第一次登記才需填寫) 
+                                                        因稅籍資料上所記載之權利人和現有使用人姓名不符，而賣方提出權利證明文件(未辦理建物所有權第一次登記才需填寫) 
                                                     </div>
                                                     <input class="form-check-input" type="radio" name="subjectEA" id="subject1" value="option1" >
                                                     <label class="form-check-label" for="subject1">
@@ -3499,19 +3514,9 @@
                                                     具
                                                 </td>
                                             </tr>
+
                                             <tr class="33">
                                                 <th scope="row">33</th>
-                                                <td>
-                                                    <input class="form-check-input" type="checkbox" name="subjectGB" id="subject2" value="option2">
-                                                    其他，說明：
-                                                </td>
-                                                <td>
-                                                    <input type="text" class="form-control  form-control-sm form-inline-block" id="">
-                                                    
-                                                </td>
-                                            </tr>
-                                            <tr class="34">
-                                                <th scope="row">34</th>
                                                 <td>
                                                     <input class="form-check-input" type="checkbox" name="subjectGB" id="subject2" value="option2">
                                                     電話
@@ -3521,23 +3526,35 @@
                                                     具
                                                 </td>
                                             </tr>
+                                            <tr class="34">
+                                                <th scope="row">34</th>
+                                                <td>
+                                                    <input class="form-check-input " type="checkbox" name="subjectGB" id="subject2" value="option2">
+                                                    電話號碼
+                                                </td>
+                                                <td>
+                                                    請輸入號碼：<input type="text" class="form-control  form-control-sm form-inline-block col-12" id="">
+                                                </td>
+                                            </tr>
                                             <tr class="35">
                                                 <th scope="row">35</th>
                                                 <td>
                                                     <input class="form-check-input" type="checkbox" name="subjectGB" id="subject2" value="option2">
-                                                    電話號碼
+                                                    其他
                                                 </td>
                                                 <td>
-                                                    請輸入號碼：<input type="text" class="form-control  form-control-sm form-inline-block" id="">
+                                                    <input type="text" class="form-control  form-control-sm col-12" id="">
+                                                    
                                                 </td>
                                             </tr>
                                             <tr class="36">
                                                 <th scope="row">36</th>
                                                 <td>
                                                     <input class="form-check-input" type="checkbox" name="subjectGB" id="subject2" value="option2">
+                                                    固定物現況
                                                 </td>
                                                 <td>
-                                                    固定物現況，以實際買賣契約書為主
+                                                    以實際買賣契約書為主
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -3553,7 +3570,7 @@
                         </fieldset>   
                         <!-- <fieldset class="row pt-3">
                             <legend class="col-form-label col-sm-3 pt-0">
-                                44.有無停車位？
+                                44.有無停車位
                             </legend>
                             <div class="col-sm-9">
                                 <div class="form-check">
@@ -3572,7 +3589,7 @@
                         </fieldset>      -->
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                45.本棟建物有無依法設置之中繼幫浦機械室或水箱
+                                44.本棟建物有無依法設置之中繼幫浦機械室或水箱
                                 <small class="text-success">
                                     現調/使用執照
                                 </small>
@@ -3596,7 +3613,7 @@
                         </fieldset>  
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                46.本物件建地或其所在社區有其他屋況、使用權等應特別注意事項或有其他重要事項須告知買方者
+                                45.建地或所在社區有其他屋況、使用權等應特別注意事項或有其他重要事項須告知買方者
                                 <small class="text-success">
                                     問屋主/鄰居/管委會/管理人
                                 </small>                        
@@ -3619,7 +3636,7 @@
                         </fieldset>  
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                47.是否有房屋評定現值？       
+                                46.是否有房屋評定現值       
                                 <small class="text-success">
                                     問屋主
                                 </small>                     
@@ -3638,17 +3655,30 @@
                                     </label>
                                 </div>
                                 <div class="form-check ">
-                                    <input class="form-check-input" type="radio" name="subjectHA" id="subject2" value="option2">
-                                    <label class="form-check-label mb-2" for="subject2">
-                                        有，金額：
-                                    </label>
-                                    <input type="text" class="form-control col-sm-2 form-control-sm" id="">
+                                    <div class="row g-2">
+                                        <div class="col-sm-2 col-12">
+                                            <input class="form-check-input" type="radio" name="subjectHA" id="subject2" value="option2">
+                                            <label class="form-check-label mb-2" for="subject2">
+                                                有，金額：
+                                            </label>
+                                        </div>
+
+                                        <div  class="col-sm-4 col-10">
+                                            <input type="text" class="form-control col-12 form-control-sm " id="">
+                                        </div>
+                                        <div  class="col-sm-4 col-2">
+                                            元
+                                        </div>
+
+                                    </div>
+
                                 </div>
+
                             </div>
                         </fieldset>
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                48.是否有解約、違約之處罰              
+                                47.是否有解約、違約之處罰              
                                 <small class="text-success">
                                     買賣意願書、要約書、定金收據、定金契約相關約定
                                 </small>
@@ -3670,7 +3700,7 @@
                         </fieldset>
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                49.賣方是否表達其他交易條件                    
+                                48.賣方是否表達其他交易條件                    
                                 <small class="text-success">
                                     委託銷售契約書
                                 </small>        
@@ -3693,7 +3723,7 @@
                         </fieldset> 
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                50.周邊環境(半徑300公尺)有重要環境設施(複選)                                
+                                49.周邊環境(半徑300公尺)有重要環境設施                                
                                 <small class="text-success">
                                     現調/網路地圖
                                 </small>
@@ -3701,175 +3731,171 @@
                             </legend>
                             <div class="col-sm-9">
                                 <div class="form-check">
-                                    <div class="  form-inline-block" style="padding-left: 2em;">
-                                        <input class="form-check-input" type="checkbox" name="subjectCA" id="subject1" value="option1">
-                                        <label class="form-check-label " for="subject1">
-                                            如相關電子地圖標註。                                       
+                                    <div class="  " style="">
+                                        <input class="form-check-input" type="checkbox" name="subjectCA" id="" value="option1">
+                                        <label class="form-check-label " for="">
+                                            如鄰近重要設施參考圖暨位置略圖                                 
                                         </label> 
                                     </div>
-                                    <div class=" form-inline-block" style="padding-left: 2em;">
-                                        <input class="form-check-input" type="checkbox" name="subjectCA" id="subject1" value="option1">
-                                        <label class="form-check-label " for="subject1">
-                                            如相關電子地圖標註外之設施，如(複選)：         
+                                    <div class="" style="">
+                                        <input class="form-check-input" type="checkbox" name="subjectCA" id="" value="option1">
+                                        <label class="form-check-label " for="">
+                                            上述以外之設施： 
                                         </label> 
                                     </div>
-                                    <div class=" form-inline-block" style="padding-left: 2em;">
-                                        <input class="form-check-input" type="checkbox" name="subjectCA" id="subject1" value="option1">
-                                        <label class="form-check-label " for="subject1">
-                                            都市計畫地形圖     
-                                        </label> 
-                                    </div>
-                                    <div class="  form-inline-block" style="padding-left: 2em;">
-                                        <input class="form-check-input" type="checkbox" name="subjectCA" id="subject1" value="option1">
-                                        <label class="form-check-label " for="subject1">
-                                            公(私)有市場        
-                                        </label> 
-                                    </div>
-                                    <div class=" form-inline-block" style="padding-left: 2em;">
-                                        <input class="form-check-input" type="checkbox" name="subjectCA" id="subject1" value="option1">
-                                        <label class="form-check-label " for="subject1">
-                                            超級市場            
-                                        </label> 
-                                    </div>
-                                    <div class=" form-inline-block" style="padding-left: 2em;">
-                                        <input class="form-check-input" type="checkbox" name="subjectCA" id="subject1" value="option1">
-                                        <label class="form-check-label " for="subject1">
-                                            學校        
-                                        </label> 
-                                    </div>
-                                    <div class=" form-inline-block" style="padding-left: 2em;">
-                                        <input class="form-check-input" type="checkbox" name="subjectCA" id="subject1" value="option1">
-                                        <label class="form-check-label " for="subject1">
-                                            警察局(分駐所、派出所)     
-                                        </label> 
-                                    </div>
-                                    <div class=" form-inline-block" style="padding-left: 2em;">
-                                        <input class="form-check-input" type="checkbox" name="subjectCA" id="subject1" value="option1">
-                                        <label class="form-check-label " for="subject1">
-                                            行政機關       
-                                        </label> 
-                                    </div>
-                                    <div class="  form-inline-block" style="padding-left: 2em;">
-                                        <input class="form-check-input" type="checkbox" name="subjectCA" id="subject1" value="option1">
-                                        <label class="form-check-label " for="subject1">
-                                            體育場        
-                                        </label> 
-                                    </div>
-                                    <div class=" form-inline-block" style="padding-left: 2em;">
-                                        <input class="form-check-input" type="checkbox" name="subjectCA" id="subject1" value="option1">
-                                        <label class="form-check-label " for="subject1">
-                                            醫院            
-                                        </label> 
-                                    </div>
-                                    <div class=" form-inline-block" style="padding-left: 2em;">
-                                        <input class="form-check-input" type="checkbox" name="subjectCA" id="subject1" value="option1">
-                                        <label class="form-check-label " for="subject1">
-                                            飛機場       
-                                        </label> 
-                                    </div>
-                                    <div class=" form-inline-block" style="padding-left: 2em;">
-                                        <input class="form-check-input" type="checkbox" name="subjectCA" id="subject1" value="option1">
-                                        <label class="form-check-label " for="subject1">
-                                            台電變電所用地      
-                                        </label> 
-                                    </div>
-                                    <div class=" form-inline-block" style="padding-left: 2em;">
-                                        <input class="form-check-input" type="checkbox" name="subjectCA" id="subject1" value="option1">
-                                        <label class="form-check-label " for="subject1">
-                                            地面高壓電塔(線)   
-                                        </label> 
-                                    </div>
-                                    <div class=" form-inline-block" style="padding-left: 2em;">
-                                        <input class="form-check-input" type="checkbox" name="subjectCA" id="subject1" value="option1">
-                                        <label class="form-check-label " for="subject1">
-                                            寺廟        
-                                        </label> 
-                                    </div>
-                                    <div class=" form-inline-block" style="padding-left: 2em;">
-                                        <input class="form-check-input" type="checkbox" name="subjectCA" id="subject1" value="option1">
-                                        <label class="form-check-label " for="subject1">
-                                            殯儀館        
-                                        </label> 
-                                    </div>
-                                    <div class=" form-inline-block" style="padding-left: 2em;">
-                                        <input class="form-check-input" type="checkbox" name="subjectCA" id="subject1" value="option1">
-                                        <label class="form-check-label " for="subject1">
-                                            公墓        
-                                        </label> 
-                                    </div>
-                                    <div class=" form-inline-block" style="padding-left: 2em;">
-                                        <input class="form-check-input" type="checkbox" name="subjectCA" id="subject1" value="option1">
-                                        <label class="form-check-label " for="subject1">
-                                            火化場        
-                                        </label> 
-                                    </div>
-                                    <div class=" form-inline-block" style="padding-left: 2em;">
-                                        <input class="form-check-input" type="checkbox" name="subjectCA" id="subject1" value="option1">
-                                        <label class="form-check-label " for="subject1">
-                                            骨灰(骸)存放設施        
-                                        </label> 
-                                    </div>
-                                    <div class=" form-inline-block" style="padding-left: 2em;">
-                                        <input class="form-check-input" type="checkbox" name="subjectCA" id="subject1" value="option1">
-                                        <label class="form-check-label " for="subject1">
-                                            垃圾場(掩埋場、焚化場)        
-                                        </label> 
-                                    </div>
-                                    <div class=" form-inline-block" style="padding-left: 2em;">
-                                        <input class="form-check-input" type="checkbox" name="subjectCA" id="subject1" value="option1">
-                                        <label class="form-check-label " for="subject1">
-                                            顯見之私人墳墓        
-                                        </label> 
-                                    </div>
-                                    <div class=" form-inline-block" style="padding-left: 2em;">
-                                        <input class="form-check-input" type="checkbox" name="subjectCA" id="subject1" value="option1">
-                                        <label class="form-check-label " for="subject1">
-                                            加油(氣)站        
-                                        </label> 
-                                    </div>
-                                    <div class=" form-inline-block" style="padding-left: 2em;">
-                                        <input class="form-check-input" type="checkbox" name="subjectCA" id="subject1" value="option1">
-                                        <label class="form-check-label " for="subject1">
-                                            瓦斯行(場)        
-                                        </label> 
-                                    </div>
-                                    <div class=" form-inline-block" style="padding-left: 2em;">
-                                        <input class="form-check-input" type="checkbox" name="subjectCA" id="subject1" value="option1">
-                                        <label class="form-check-label " for="subject1">
-                                            禮(葬)儀社  
-                                        </label> 
-                                    </div>
-                                    <div class=" form-inline-block" style="padding-left: 2em;">
-                                        <input class="form-check-input" type="checkbox" name="subjectCA" id="subject1" value="option1">
-                                        <label class="form-check-label " for="subject1">
-                                            既有高架橋    
-                                        </label> 
-                                    </div>
-                                    <div class=" form-inline-block" style="padding-left: 2em;">
-                                        <input class="form-check-input" type="checkbox" name="subjectCA" id="subject1" value="option1">
-                                        <label class="form-check-label " for="subject1">
-                                            即將興建高架橋遮蔽視野       
-                                        </label> 
-                                    </div>
-                                    <div class=" form-inline-block" style="padding-left: 2em;">
-                                        <input class="form-check-input" type="checkbox" name="subjectCA" id="subject1" value="option1">
-                                        <label class="form-check-label " for="subject1">
-                                            基地台
-                                        </label> 
-                                    </div>
-                                    <div class=" form-inline-block" style="padding-left: 2em;">
-                                        <input class="form-check-input" type="checkbox" name="subjectCA" id="subject1" value="option1">
-                                        <label class="form-check-label " for="subject1">
-                                            其他：       
-                                        </label> 
-                                        <input type="text" class="form-control  form-control-sm form-inline-block" id="">
+                                    <div class="">
+                                        <div class="form-check  form-inline-block" style="">
+                                            <input class="form-check-input" type="checkbox" name="subjectCA" id="" value="option1">
+                                            <label class="form-check-label " for="">
+                                                公(私)有市場        
+                                            </label> 
+                                        </div>
+                                        <div class="form-check form-inline-block" style="">
+                                            <input class="form-check-input" type="checkbox" name="subjectCA" id="" value="option1">
+                                            <label class="form-check-label " for="">
+                                                超級市場            
+                                            </label> 
+                                        </div>
+                                        <div class="form-check form-inline-block" style="">
+                                            <input class="form-check-input" type="checkbox" name="subjectCA" id="" value="option1">
+                                            <label class="form-check-label " for="">
+                                                學校        
+                                            </label> 
+                                        </div>
+                                        <div class="form-check form-inline-block" style="">
+                                            <input class="form-check-input" type="checkbox" name="subjectCA" id="" value="option1">
+                                            <label class="form-check-label " for="">
+                                                警察局(分駐所、派出所)     
+                                            </label> 
+                                        </div>
+                                        <div class="form-check form-inline-block" style="">
+                                            <input class="form-check-input" type="checkbox" name="subjectCA" id="" value="option1">
+                                            <label class="form-check-label " for="">
+                                                行政機關       
+                                            </label> 
+                                        </div>
+                                        <div class=" form-check form-inline-block" style="">
+                                            <input class="form-check-input" type="checkbox" name="subjectCA" id="" value="option1">
+                                            <label class="form-check-label " for="">
+                                                體育場        
+                                            </label> 
+                                        </div>
+                                        <div class="form-check form-inline-block" style="">
+                                            <input class="form-check-input" type="checkbox" name="subjectCA" id="" value="option1">
+                                            <label class="form-check-label " for="">
+                                                醫院            
+                                            </label> 
+                                        </div>
+                                        <div class="form-check form-inline-block" style="">
+                                            <input class="form-check-input" type="checkbox" name="subjectCA" id="" value="option1">
+                                            <label class="form-check-label " for="">
+                                                飛機場       
+                                            </label> 
+                                        </div>
+                                        <div class="form-check form-inline-block" style="">
+                                            <input class="form-check-input" type="checkbox" name="subjectCA" id="" value="option1">
+                                            <label class="form-check-label " for="">
+                                                台電變電所用地      
+                                            </label> 
+                                        </div>
+                                        <div class="form-check form-inline-block" style="">
+                                            <input class="form-check-input" type="checkbox" name="subjectCA" id="" value="option1">
+                                            <label class="form-check-label " for="">
+                                                地面高壓電塔(線)   
+                                            </label> 
+                                        </div>
+                                        <div class="form-check form-inline-block" style="">
+                                            <input class="form-check-input" type="checkbox" name="subjectCA" id="" value="option1">
+                                            <label class="form-check-label " for="">
+                                                寺廟        
+                                            </label> 
+                                        </div>
+                                        <div class="form-check form-inline-block" style="">
+                                            <input class="form-check-input" type="checkbox" name="subjectCA" id="" value="option1">
+                                            <label class="form-check-label " for="">
+                                                殯儀館        
+                                            </label> 
+                                        </div>
+                                        <div class="form-check form-inline-block" style="">
+                                            <input class="form-check-input" type="checkbox" name="subjectCA" id="" value="option1">
+                                            <label class="form-check-label " for="">
+                                                公墓        
+                                            </label> 
+                                        </div>
+                                        <div class="form-check form-inline-block" style="">
+                                            <input class="form-check-input" type="checkbox" name="subjectCA" id="" value="option1">
+                                            <label class="form-check-label " for="">
+                                                火化場        
+                                            </label> 
+                                        </div>
+                                        <div class="form-check form-inline-block" style="">
+                                            <input class="form-check-input" type="checkbox" name="subjectCA" id="" value="option1">
+                                            <label class="form-check-label " for="">
+                                                骨灰(骸)存放設施        
+                                            </label> 
+                                        </div>
+                                        <div class="form-check form-inline-block" style="">
+                                            <input class="form-check-input" type="checkbox" name="subjectCA" id="" value="option1">
+                                            <label class="form-check-label " for="">
+                                                垃圾場(掩埋場、焚化場)        
+                                            </label> 
+                                        </div>
+                                        <div class="form-check form-inline-block" style="">
+                                            <input class="form-check-input" type="checkbox" name="subjectCA" id="" value="option1">
+                                            <label class="form-check-label " for="">
+                                                顯見之私人墳墓        
+                                            </label> 
+                                        </div>
+                                        <div class="form-check form-inline-block" style="">
+                                            <input class="form-check-input" type="checkbox" name="subjectCA" id="" value="option1">
+                                            <label class="form-check-label " for="">
+                                                加油(氣)站        
+                                            </label> 
+                                        </div>
+                                        <div class="form-check form-inline-block" style="">
+                                            <input class="form-check-input" type="checkbox" name="subjectCA" id="" value="option1">
+                                            <label class="form-check-label " for="">
+                                                瓦斯行(場)        
+                                            </label> 
+                                        </div>
+                                        <div class="form-check form-inline-block" style="">
+                                            <input class="form-check-input" type="checkbox" name="subjectCA" id="" value="option1">
+                                            <label class="form-check-label " for="">
+                                                禮(葬)儀社  
+                                            </label> 
+                                        </div>
+                                        <div class="form-check form-inline-block" style="">
+                                            <input class="form-check-input" type="checkbox" name="subjectCA" id="" value="option1">
+                                            <label class="form-check-label " for="">
+                                                既有高架橋    
+                                            </label> 
+                                        </div>
+                                        <div class="form-check form-inline-block" style="">
+                                            <input class="form-check-input" type="checkbox" name="subjectCA" id="" value="option1">
+                                            <label class="form-check-label " for="">
+                                                即將興建高架橋遮蔽視野       
+                                            </label> 
+                                        </div>
+                                        <div class="form-check form-inline-block" style="">
+                                            <input class="form-check-input" type="checkbox" name="subjectCA" id="" value="option1">
+                                            <label class="form-check-label " for="">
+                                                基地台
+                                            </label> 
+                                        </div>
+                                        <div class="form-check form-inline-block" style="">
+                                            <input class="form-check-input" type="checkbox" name="subjectCA" id="" value="option1">
+                                            <label class="form-check-label " for="">
+                                                其他：       
+                                            </label> 
+                                            <input type="text" class="form-control  form-control-sm form-inline-block" id="">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </fieldset>  
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                51.主建物是否為共有
+                                50.本案建物權利種類
                                 <small class="text-success">
                                     建物謄本
                                 </small>                            
@@ -3916,7 +3942,7 @@
                         </fieldset>  
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                52.主建物是否為共有
+                                51.主建物是否為共有
                                 <small class="text-success">
                                     建物謄本
                                 </small>                         
@@ -3945,7 +3971,7 @@
                                             </label>
                                         </div>
                                         <div class="form-check ">
-                                            <div>有無使用、管理等登記？</div>
+                                            <div>有無使用、管理等登記</div>
                                             <div class="form-check">
                                                 <input class="form-check-input" type="radio" name="subjectHQ" id="subject1" value="option1">
                                                 <label class="form-check-label" for="subject1">
@@ -3966,7 +3992,7 @@
                         </fieldset> 
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                53.本案建物是否有他項權利   
+                                52.本案建物是否有他項權利   
                                 <small class="text-success">
                                     建物謄本
                                 </small>                        
@@ -4013,19 +4039,14 @@
                                             </label>
                                             <input type="text" class="form-control  form-control-sm form-inline-block" id="">                                 
                                         </div>
-                                        <div class="form-check">
-                                            <label class="form-check-label " for="subject1">
-                                                上述設定情形（詳如登記謄本，請於簽約時另行協商排除方式）：
-                                            </label>
-                                            <input type="text" class="form-control  form-control-sm " id="">                                 
-                                        </div>
+                                        <small class="text-danger"> 上述設定情形（詳如登記謄本，請於簽約時另行協商排除方式） </small>
                                     </label>
                                 </div>
                             </div>
                         </fieldset> 
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                54.本案建物是否有限制登記                      
+                                53.本案建物是否有限制登記                      
                                 <small class="text-success">
                                     建物謄本
                                 </small>      
@@ -4069,27 +4090,21 @@
                                             <input class="form-check-input" type="checkbox" name="subjectHQ" id="subject1" value="option1">
                                             <label class="form-check-label" for="subject1">
                                                 其他禁止處分
-                                                <div>
-                                                    <label class="form-check-label" for="subject1">
-                                                        其他，說明
-                                                    </label>
+                                                <div class="form-inline-block">
+                                                        ，說明
+                                                    
                                                     <input type="text" class="form-control  form-control-sm form-inline-block" id="">                                 
-                                                </div>
-                                                <div>
-                                                    <label class="form-check-label" for="subject1">
-                                                        登記情形（詳如登記謄本）
-                                                        <input type="text" class="form-control  form-control-sm form-inline-block" id="">                                 
-                                                    </label>
                                                 </div>
                                             </label>
                                         </div>
+                                        <small class="text-danger"> 上述登記情形（詳如登記謄本，請於簽約時另行協商排除方式） </small>
                                     </label>
                                 </div>
                             </div>
                         </fieldset>    
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                55.本案建物是否有信託登記
+                                54.本案建物是否有信託登記
                                 <small class="text-success">
                                     建物謄本
                                 </small>                            
@@ -4104,15 +4119,16 @@
                                 <div class="form-check ">
                                     <input class="form-check-input" type="radio" name="subjectHO" id="subject2" value="option2">
                                     <label class="form-check-label " for="subject2">
-                                        有（依登記謄本及信託專簿記載）   
-                                        <input type="text" class="form-control  form-control-sm form-inline-block" id="">
+                                        有
                                     </label>
+                                    <input type="text" class="form-control  form-control-sm" id="">
+                                    <small class="text-danger" >（依登記謄本及信託專簿記載）   </small>
                                 </div>
                             </div>
                         </fieldset>
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                56.是否屬工業區或不得做住宅使用之商業區或其它分區
+                                55.是否屬工業區或不得做住宅使用之商業區或其它分區
                                 <small class="text-success">
                                 </small>                    
                                 <div>
@@ -4141,7 +4157,10 @@
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="subjectHO" id="subject1" value="option1">
                                             <label class="form-check-label" for="subject1">
-                                                不得作住宅使用之商業區（例：娛樂區.工商混合區.工商服務展售區.辦公服務區等）
+                                                不得作住宅使用之商業區
+                                                <br>
+                                                <div class="text-success">（例：娛樂區、工商混合區、工商服務展售區、辦公服務區等）</div>
+                                                
                                             </label>
                                         </div>
                                         <div class="form-check">
@@ -4149,7 +4168,7 @@
                                             <label class="form-check-label" for="subject1">
                                                 其他分區，說明：                                            
                                             </label>
-                                            <input type="text" class="form-control  form-control-sm form-inline-block" id="">
+                                            <input type="text" class="form-control  form-control-sm " id="">
                                         </div>
                                     </label>
                                 </div>
@@ -4157,7 +4176,7 @@
                         </fieldset>    
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                57.本建物是否有獎勵容積之開放空間        
+                                56.本建物是否有獎勵容積之開放空間        
                                 <small class="text-success">
                                     社區有無示意圖、使用執照有無登載
                                 </small> 
@@ -4165,7 +4184,7 @@
                                     <a href="https://img2.gov.taipei/F100/F100.aspx" target="_blank">
                                         台北
                                     </a>
-                                    <a href="https://building-management.publicwork.ntpc.gov.tw/bm_query.jsp?rt=3" target="_blank">
+                                    <a href="https://building-management.publicwork.ntpc.gov.tw/bm_query.jsprt=3" target="_blank">
                                         新北
                                     </a>
                                     <a href="https://buildmis.kcg.gov.tw/bupic/preLoginFormAction.do" target="_blank">
@@ -4211,7 +4230,7 @@
                         </fieldset>
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                58.本案使用執照之備註是否有注意事項  
+                                57.本案使用執照之備註是否有注意事項  
                                 <small class="text-success">
                                     使照
                                 </small>                       
@@ -4243,7 +4262,7 @@
                         </fieldset>
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                59.建物型態                         
+                                58.建物型態                         
                                 <small class="text-success">
                                     現調/建物謄本/使用執照
                                 </small>
@@ -4356,7 +4375,7 @@
                         </fieldset>  
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                60.現況格局有無隔間
+                                59.現況格局有無隔間
                                 <small class="text-success">
                                     房廳衛數須與格局圖一致，增建格局須分開填寫
                                 </small>                            
@@ -4393,6 +4412,9 @@
                                             </div> 
                                             <div class="col-2 col-sm-2 ">
                                                 <input type="text" class="form-control">
+                                            </div>
+                                            <div class="col-1 col-sm-1 col-form-label">
+                                                室
                                             </div>
                                         </div>
                                     </label>
@@ -4433,7 +4455,7 @@
                         </fieldset>
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                61.本案基地權利種類            
+                                60.本案基地權利種類            
                                 <small class="text-success">土地謄本</small>             
                             </legend>
                             <div class="col-sm-9">
@@ -4473,7 +4495,7 @@
                         </fieldset>  
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                62.本案基地是否有他項權利                      
+                                61.本案基地是否有他項權利                      
                                 <small class="text-success">土地謄本</small>
                             </legend>
                             <div class="col-sm-9">
@@ -4513,7 +4535,7 @@
                         </fieldset>
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                63.本案基地是否有信託登記
+                                62.本案基地是否有信託登記
                                 <small class="text-success">
                                     土地謄本
                                 </small>                    
@@ -4537,7 +4559,7 @@
                         </fieldset>
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                64.本案基地是否設定負擔情形                   
+                                63.本案基地是否設定負擔情形                   
                                 <small class="text-success">
                                     土地謄本
                                 </small>
@@ -4609,7 +4631,7 @@
                                         </div>
                                         <div class="form-check">
                                             <label class="form-check-label" for="">
-                                                <div class="fw-bold">是否有限制登記？</div>
+                                                <div class="fw-bold">是否有限制登記</div>
                                             </label>
                                             <div class="form-check">
                                                 <input class="form-check-input" type="radio" name="subjectWA" id="" value="">
@@ -4650,7 +4672,7 @@
                                         </div>
                                         <div class="form-check">
                                             <label class="form-check-label" for="">
-                                                <div class="fw-bold">是否有其他事項註記？</div>
+                                                <div class="fw-bold">是否有其他事項註記</div>
                                             </label>
                                             <div class="form-check">
                                                 <input class="form-check-input" type="radio" name="subjectWA" id="" value="">
@@ -4689,7 +4711,7 @@
                         </fieldset>
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                65.本案基地有無依民法第826條之1，規定為使用管理或分割等約定之登記
+                                64.本案基地有無依民法第826條之1，規定為使用管理或分割等約定之登記
                                 <small class="text-success">土地謄本</small>                            
                             </legend>
                             <div class="col-sm-9">
@@ -4711,7 +4733,7 @@
                         </fieldset>
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                66.基地使用分區或編定                           
+                                65.基地使用分區或編定                           
                                 <small class="text-success">
                                     土地謄本標示部/網路使用分區網站/特殊分區需另申請分區證明書檢視備註欄
                                 </small> 
@@ -4819,7 +4841,7 @@
                         </fieldset>
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                67.法定建蔽率、容積率：                         
+                                66.法定建蔽率、容積率：                         
                                 <div>
                                     <a href="https://www.udd.gov.taipei/laws/rdpqpr5-5426" target="_blank">
                                         台北
@@ -4838,11 +4860,13 @@
                             <div class="col-sm-9">
                                 <div>
                                     法定建蔽率：
-                                    <input type="text" class="form-control  form-control-sm form-inline-block" id="">                                        
+                                    <input type="text" class="form-control  form-control-sm form-inline-block" id=""> 
+                                    %                                        
                                 </div>
                                 <div class="pt-2">
                                     法定容積率：
-                                    <input type="text" class="form-control  form-control-sm form-inline-block" id="">                                        
+                                    <input type="text" class="form-control  form-control-sm form-inline-block" id="">
+                                    %                                        
                                 </div>
                                 <div class="text-danger">
                                     (查詢結果紀錄請列印) (禁建地區請填0)
@@ -4854,7 +4878,7 @@
                         </fieldset>
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                68.開發方式限制
+                                67.開發方式限制
                                 <div>
                                     <a href="https://urban.planning.ntpc.gov.tw/NtpcURInfo/" target="_blank">
                                         新北
@@ -4928,7 +4952,7 @@
                         </fieldset>
                         <fieldset class="row pt-3 "> 
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                69.本案土地是否已辦理地籍圖重測           
+                                68.本案土地是否已辦理地籍圖重測           
                                 <div>
                                     <a href="https://www2.land.ntpc.gov.tw/MASP/MASP15_NEW/MASP1501index.jsp" target="_blank">
                                         新北
@@ -4986,7 +5010,7 @@
                         </fieldset>
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0">
-                                70.是否已公告徵收
+                                69.是否已公告徵收
                                 <div>
                                     <a href="https://lems.moi.gov.tw/lems/" target="_blank">
                                         土地徵收案件資訊
@@ -5016,10 +5040,9 @@
                         </fieldset>
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0">
-                                71.稅費項目
+                                70.稅費項目
                                 <small class="text-success">
                                     金額不用填，負擔方式需勾選
-                                    *金額欄位非必填*
                                 </small>   
                                 <div>
                                     <a href="https://www.etax.nat.gov.tw/etwmain/etw158w/53" target="_blank">
@@ -5125,11 +5148,9 @@
                         </fieldset>
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                72.規費項目
+                                71.規費項目
                                 <small class="text-success">
                                     金額不用填，負擔方式需勾選
-                                    <br>
-                                    金額欄位非必填
                                 </small>                            
                         
                             </legend>
@@ -5185,7 +5206,8 @@
                         </fieldset>  
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                73.其他費用：                            
+                                72.其他費用
+                                <small class="text-success">金額不用填，負擔方式需勾選</small>                            
                             </legend>
                                 <div class="col-sm-9">
                                     <div class="form-check">
@@ -5309,7 +5331,7 @@
                         </fieldset>     
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                74.他項權利及限制登記之處理方式                 
+                                73.他項權利及限制登記之處理方式                 
                                 <small class="text-success">問屋主</small>           
                             </legend>
                             <div class="col-sm-9">
@@ -5365,14 +5387,14 @@
                 <div id="flush-collapseThree" class="accordion-collapse collapse show" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample3">
                     <form  class="accordion-body formbox  p-3 ">
                         <div class="formtitle">
-                            <div class="fs-5">
+                            <div class="fs-5 fw-bold">
                                 本停車位應調查義務 
                                 
                             </div>
                         </div>
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                辦理單獨區分所有建物登記
+                                74.辦理單獨區分所有建物登記
                                 <small class="text-success">
                                     建物謄本
                                 </small>
@@ -5383,9 +5405,6 @@
                                     <label class="form-check-label" for="subject1">
                                             有，如附件
                                     </label>
-                                    <div class="input-group mb-3">
-                                        <input type="file" class="form-control" id="inputGroupFile01">                            
-                                    </div>
                                 </div>
                                 <div class="form-check ">
                                     <input class="form-check-input" type="radio" name="subjectAA" id="subject2" value="option2">
@@ -5397,7 +5416,7 @@
                         </fieldset>
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                使用約定
+                                75.使用約定
                                 <small class="text-success">建物謄本</small>
                             </legend>
                             <div class="col-sm-9">
@@ -5429,7 +5448,7 @@
                         </fieldset>
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                停車位性質
+                                76.停車位性質
                                 <small class="text-success">使用執照/測量成果圖</small>
                             </legend>
                             <div class="col-sm-9">
@@ -5462,9 +5481,9 @@
 
                         <fieldset class="row pt-3">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                停車位規格(長/寬/高)
+                                77.停車位規格(長/寬/高)
                                 <small class="text-success">
-                                    非機械車位，淨高請填無
+                                    非機械車位，無需填寫
                                 </small>
                             </legend>
                             <div class="col-sm-9">
@@ -5486,27 +5505,31 @@
                                     <label class="form-check-label" for="subject21">
                                         淨高
                                     </label>
-                                    <input type="number" class="form-control   form-inline-block" id="">
+                                    <input type="text" class="form-control   form-inline-block" id="" placeholder="機械車位必填">
                                     公尺
                                 </div>
                         </fieldset>
                         <fieldset class="row pt-3">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                機械車位承截重量(非機械車位，請填無)
-                                <small></small>
+                                78.機械車位承截重量
+                                <small class="text-success">非機械車位，無需填寫</small>
                             </legend>
                             <div class="col-sm-9">
                                 <div class="form-check">
                                     <label class="form-check-label" for="subject21">
                                         請填寫：
                                     </label>
-                                    <input type="text" class="form-control   form-inline-block" id="">
+                                    <input type="number" class="form-control   form-inline-block" id=""  placeholder="機械車位必填">
                                     噸
+                                    <br>
+                                    <small class="text-success">1000公斤=1噸</small>
                                 </div>
+                            
+                            </div>
                         </fieldset>
                         <fieldset class="row pt-3">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                位於地上或地下幾層：
+                                79.位於地上或地下幾層
                             </legend>
                             <div class="col-sm-9">
                                 <div class="form-check">
@@ -5541,7 +5564,9 @@
                         </fieldset>
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                位置圖或停放位置拍照(如有編號應拍到編號)
+                                80.位置圖或停放位置拍照
+                                <br>
+                                <small class="text-danger">如有編號應拍到編號</small>
                             </legend>
                             <div class="col-sm-9">
                                 <div class="form-check">
@@ -5566,82 +5591,112 @@
 
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                停車方式
+                                81.停車方式
                                 <small class="text-success">現場確認/使用執照</small>
                             </legend>
                             <div class="col-sm-9">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="subjectAA" id="subject1" value="option1" >
+                                    <input class="form-check-input" type="checkbox" name="subjectAA" id="subject1" value="option1" >
                                     <label class="form-check-label" for="subject1">
                                         坡道平面 
                                     </label>
                                 </div>
 
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="subjectAA" id="subject1" value="option1" >
+                                    <input class="form-check-input" type="checkbox" name="subjectAA" id="subject1" value="option1" >
                                     <label class="form-check-label" for="subject1">
                                         坡道機械 
+                                        <div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="subjectAF" id="subject022" value="option1">
+                                                <label class="form-check-label" for="subject022">上層</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="subjectAF" id="subject023" value="option2">
+                                                <label class="form-check-label" for="subject023">中層</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="subjectAF" id="subject024" value="option3">
+                                                <label class="form-check-label" for="subject024">下層</label>
+                                            </div>                                            
+                                        </div>
                                     </label>
                                 </div>
 
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="subjectAA" id="subject1" value="option1" >
+                                    <input class="form-check-input" type="checkbox" name="subjectAA" id="subject1" value="option1" >
                                     <label class="form-check-label" for="subject1">
                                         一樓平面 
                                     </label>
                                 </div>
 
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="subjectAA" id="subject1" value="option1" >
+                                    <input class="form-check-input" type="checkbox" name="subjectAA" id="subject1" value="option1" >
                                     <label class="form-check-label" for="subject1">
                                         塔式車位 
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="subjectAA" id="subject1" value="option1" >
+                                    <input class="form-check-input" type="checkbox" name="subjectAA" id="subject1" value="option1" >
                                     <label class="form-check-label" for="subject1">
                                         升降平面 
+                                        
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="subjectAA" id="subject1" value="option1" >
+                                    <input class="form-check-input" type="checkbox" name="subjectAA" id="subject1" value="option1" >
                                     <label class="form-check-label" for="subject1">
                                         升降機械 
+                                        <div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="subjectAF" id="subject022" value="option1">
+                                                <label class="form-check-label" for="subject022">上層</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="subjectAF" id="subject023" value="option2">
+                                                <label class="form-check-label" for="subject023">中層</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="subjectAF" id="subject024" value="option3">
+                                                <label class="form-check-label" for="subject024">下層</label>
+                                            </div>                                            
+                                        </div>
+                                        
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="subjectAA" id="subject1" value="option1" >
+                                    <input class="form-check-input" type="checkbox" name="subjectAA" id="subject1" value="option1" >
                                     <label class="form-check-label" for="subject1">
                                         其他說明
                                     </label>
                                     <input type="text" class="form-control mb-2 form-control-sm form-inline-block" id="">
                                 </div>
-                                <div class="form-check">
+                                <!-- <div class="form-check">
                                     <div class="fw-bold">車位位置</div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="subjectAA" id="subject1" value="option1" >
+                                        <input class="form-check-input" type="checkbox" name="subjectAA" id="subject1" value="option1" >
                                         <label class="form-check-label" for="subject1">
                                             上層
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="subjectAA" id="subject1" value="option1" >
+                                        <input class="form-check-input" type="checkbox" name="subjectAA" id="subject1" value="option1" >
                                         <label class="form-check-label" for="subject1">
                                             中層
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="subjectAA" id="subject1" value="option1" >
+                                        <input class="form-check-input" type="checkbox" name="subjectAA" id="subject1" value="option1" >
                                         <label class="form-check-label" for="subject1">
                                             下層
                                         </label>
                                     </div>
-                                </div>
+                                </div> -->
                                 </div>
                         </fieldset>
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                使用狀態
+                                82.使用狀態
                                 <small class="text-success">
                                     現調/問屋主/管委會/管理人
                                 </small>
@@ -5690,7 +5745,7 @@
                         </fieldset>
                         <fieldset class="row pt-3 ">
                             <legend class="col-form-label col-sm-3 pt-0 fw-bold">
-                                車輛出入是否經過私人土地而需額外付費
+                                83.車輛出入是否經過私人土地而需額外付費
                                 <small class="text-success">
                                     現調/問屋主/管委會/地籍圖比對
                                 </small>
