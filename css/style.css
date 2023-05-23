@@ -46,7 +46,7 @@ div, section{
 fieldset{
   padding-bottom: 1em;
 }
-fieldset:nth-child(even){
+fieldset:nth-child(odd){
   background-color: #f7f7f7;
 }
 
@@ -76,4 +76,17 @@ fieldset:nth-child(even){
 }
 legend{
   font-weight: 600;
+}
+.col-md-auto {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: none
+}
+
+.text-nowrap {
+  white-space: nowrap!important;
+}
+.w-auto {
+  width: auto!important;
 }
