@@ -1,0 +1,1281 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="css/style.css">
+    <title>建物及其基地產權調查表</title>
+</head>
+<body>
+    <header>    
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">東森房屋</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                回到置頂
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#footer">
+                                回到最尾
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                暫存
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="d-flex searchbox">
+                        <input class="form-control me-2 " id="" type="search" placeholder="搜尋" aria-label="Search">
+                        <button class="btn btn-outline-success " type="submit">搜尋</button>
+                    </form>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="w1180 mb-3">
+            <form class="formbox p-3">
+                <div class="row pt-3">
+                    <legend class="col-12 col-sm-3 col-form-label fw-bold" >
+                        物件編號
+                    </legend>
+                    <div class="col-12 col-sm-5">
+                        <div class="row g-2">
+                            <div class="col-12 col-sm-4 ">
+                                <input type="text" id="" class="form-control" >
+                            </div>
+                            
+                                <div class="col-auto mb-2">
+                                    <button type="button" class="btn btn-primary">新增</button>
+                                </div>
+                            
+                        </div>                           
+                    </div>    
+                </div> 
+            </form>
+        </section>
+        <figcaption class="w1180 blockquote-footer">
+            按下新增按鈕才會顯示下面(正式版會刪除的文字)
+        </figcaption>
+        <section class="w1180   mb-3" >
+            <form class=" formbox  p-3 ">
+                <div class="formtitle">
+                    <p class="fw-bold h1">成屋委託資料</p>
+                </div>
+                <fieldset class="row pt-3">
+                    <label class="col-12 col-sm-3 col-form-label fw-bold" >
+                        地址
+                    </label>
+                    <div class="col-12 col-sm-9">
+                        
+                        <div class="row g-2">
+                            <div class="col-12 col-sm-6 d-flex ">
+                                <div class="col-6 me-1 flex-fill">
+                                    <select class="form-select" aria-label="">
+                                        <option selected>請選擇縣市</option>
+                                        <option value="1">台北市</option>
+                                        <option value="2">新北市</option>
+                                        <option value="3">高雄市</option>
+                                    </select>
+                                </div>
+                                <div class="col-6 me-1 flex-fill">
+                                    <select class="form-select" aria-label="">
+                                        <option selected>請選擇區</option>
+                                        <option value="1">大安區</option>
+                                        <option value="2">文山區</option>
+                                        <option value="3">萬華區</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 text-nowrap col-sm-6 d-flex ">
+                                <div class="col-auto mx-1 flex-fill col-form-label ">
+                                    道路
+                                </div> 
+                                <div class="col-10 mx-1 flex-fill">
+                                    <select name="select_road" id="select_road_id" class="form-select " style="">
+                                        <option value="">道路</option>
+                                        <option value="土城市延壽街">土城市延壽街</option>
+                                        <option value="土城市延壽路">土城市延壽路</option>
+                                        <option value="大仁街">大仁街</option>
+                                        <option value="大勇街">大勇街</option>
+                                        <option value="大智街">大智街</option>
+                                        <option value="工專路">工專路</option>
+                                        <option value="中山二段">中山二段</option>
+                                        <option value="中山路">中山路</option>
+                                        <option value="中山路二段">中山路二段</option>
+                                        <option value="中山路三段">中山路三段</option>
+                                        <option value="中正路">中正路</option>
+                                        <option value="中安街">中安街</option>
+                                        <option value="中和市中正路">中和市中正路</option>
+                                        <option value="中和市安平路">中和市安平路</option>
+                                        <option value="中和路">中和路</option>
+                                        <option value="中板路">中板路</option>
+                                        <option value="中原二街">中原二街</option>
+                                        <option value="中原三街">中原三街</option>
+                                        <option value="中原五街">中原五街</option>
+                                        <option value="中原六街">中原六街</option>
+                                        <option value="中原東街">中原東街</option>
+                                        <option value="中原街">中原街</option>
+                                        <option value="中興街">中興街</option>
+                                        <option value="仁愛街">仁愛街</option>
+                                        <option value="仁愛路">仁愛路</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-2 pt-3 " >                                
+                            <div class="col-2 col-md-1">
+                                <input type="text" class="form-control" >
+                            </div>
+                            <div class="col-auto col-form-label">
+                                    巷
+                            </div> 
+                            <div class="col-2 col-md-1">
+                                    <input type="text" class="form-control" >
+                            </div>
+                            <div class="col-auto col-form-label">
+                                    弄
+                            </div> 
+                            <div class="col-2 col-md-1">
+                                <input type="text" class="form-control" >
+                            </div>
+                            <div class="col-auto text-nowrap col-form-label">
+                                    號之
+                            </div> 
+                            <div class="col-2 col-md-2">
+                                <input type="text" class="form-control" >
+                            </div>
+                            <div class="col-2 col-md-2">
+                                <input type="text" class="form-control" >
+                            </div>
+                            <div class="col-auto text-nowrap col-form-label">
+                                    樓之
+                            </div> 
+                            <div class="col-2  col-md-1">
+                                    <input type="text" class="form-control" >
+                            </div>
+                        </div>                            
+                    </div>  
+                </fieldset>   
+                <fieldset class="row pt-3">
+                    <legend class="col-form-label col-12 col-sm-3 pt-0 fw-bold">
+                        售價
+                    </legend>
+                    <div class="col-12 col-sm-3 mb-2">
+                        <div class="row g-2">
+                            <div class="col-5 col-sm-6"><input type="text"  class="form-control" ></div>
+                            <div class="col-auto"><label for="subjectA-001">萬</label></div>
+                        </div>
+                    </div>
+                    <legend class="col-form-label col-12 col-sm-3 pt-0 fw-bold">
+                        車位
+                    </legend>
+                    <div class="col-12 col-sm-3 mb-2">
+                        <div class="row g-2">
+                            <div class="col-5 col-sm-6">
+                                <input type="text" id="" class="form-control" placeholder="無車位免填">
+                            </div>
+                            <div class="col-auto">
+                                <label for="subjectA-001">萬</label>
+                            </div>
+                            <div class="col-auto ">
+                                <input class="form-check-input" type="checkbox" name="subject2" id="" >
+                                <label for="subjectA-002">含於開價</label>
+                            </div>
+                        </div>
+                    </div>
+                    <legend class="col-form-label col-12 col-sm-3 pt-0 fw-bold">
+                        登記
+                    </legend>
+                    <div class="col-12 col-sm-3 mb-2">
+                        <div class="row g-2">
+                            <div class="col-5 col-sm-6">
+                                <input type="text" id="" class="form-control" placeholder="">
+                            </div>
+                            <div class="col-auto">
+                                <label for="">坪</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <legend class="col-form-label col-12 col-sm-3 pt-0 fw-bold">
+                        每坪單價
+                    </legend>
+                    <div class="col-12 col-sm-3 mb-2">
+                        <div class="row g-2">
+                            <div class="col-5 col-sm-6">
+                                <input type="text" id="" class="form-control" placeholder="">
+                            </div>
+                            <div class="col-auto">
+                                <label for="subjectA-001">萬</label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="row pt-3">
+                    <legend class="col-form-label col-12 col-sm-3 pt-0 fw-bold">
+                        所有權人
+                    </legend>
+                    <div class="col-12 col-sm-9 mb-2">
+                            <div class="col-5 col-sm-3">
+                                <input type="text" id="" class="form-control" placeholder="">
+                            </div>
+                    </div>
+                    <legend class="col-form-label col-12 col-sm-3 pt-0 fw-bold">
+                        代理人
+                    </legend>
+                    <div class="col-12 col-sm-9 mb-2">
+                        <div class="row g-2">
+                            <div class="col-5 col-sm-3">
+                                <input type="text" id="" class="form-control" placeholder="無代理免填">
+                            </div>
+                            <div class="col-5 col-sm-3">
+                                <input class="form-check-input" type="checkbox" name="subject2" id="">
+                                <label for="subjectA-002">缺授權書</label>
+                            </div>
+                        </div>
+                    </div>
+                    <legend class="col-form-label col-12 col-sm-3 pt-0 fw-bold">
+                        取得日期
+                    </legend>
+                    <div class="col-12 col-sm-9 mb-2">
+                        <div class="row g-2">
+                            <div class="col-4  col-sm-3 mx-1">
+                                <input type="text" id="" class="form-control" placeholder="YYYMMDD">
+                            </div>
+                        </div>
+                    </div>
+                    <legend class="col-form-label col-12 col-sm-3 pt-0 fw-bold">
+                        委託期間
+                    </legend>
+                    <div class="col-12 col-sm-9 mb-2">
+                        <div class="row g-2">
+                            <div class="col-4  col-sm-3 mx-1">
+                                <input type="text" id="" class="form-control" placeholder="YYYMMDD">
+                            </div>
+                            <div class="col-12 col-sm-auto">
+                                至
+                            </div>
+                            <div class="col-4  col-sm-3 mx-1">
+                                <input type="text" id="" class="form-control" placeholder="YYYMMDD">
+                            </div>
+                            <div class="col-auto mb-2">
+                                <button type="button" class="btn btn-primary">異動申請</button>
+                            </diV>
+                        </div>
+                    </div>
+                    <legend class="col-form-label col-12 col-sm-3 pt-0 fw-bold">
+                            付款方式
+                    </legend>
+                    <div class="col-12 col-sm-9 mb-2">
+                        <div class="row g-2">
+                                <div class="col-6 col-sm-3">
+                                    <label for="">
+                                        第一期
+                                    </label>
+                                    <div class="d-flex mb-2">
+                                        <input type="text" id="" class="form-control me-1" placeholder="10">
+                                        %
+                                    </div>
+                                    <input type="text" id="" class="form-control" placeholder="">
+                                </div>
+                                <div class="col-6 col-sm-3">
+                                    <label for="">
+                                        第二期
+                                    </label>
+                                    <div class="d-flex mb-2">
+                                        <input type="text" id="" class="form-control me-1" placeholder="10">
+                                        %
+                                    </div>
+                                    <input type="text" id="" class="form-control" placeholder="">
+                                </div>
+                                <div class="col-6 col-sm-3">
+                                    <label for="">
+                                        第三期
+                                    </label>
+                                    <div class="d-flex mb-2">
+                                        <input type="text" id="" class="form-control me-1" placeholder="10">
+                                        %
+                                    </div>
+                                    <input type="text" id="" class="form-control" placeholder="">
+                                </div>
+                                <div class="col-6 col-sm-3">
+                                    <label for="">
+                                        第四期
+                                    </label>
+                                    <div class="d-flex mb-2">
+                                        <input type="text" id="" class="form-control me-1" placeholder="70">
+                                        %
+                                    </div>
+                                    <div class="d-flex ">
+                                        <input type="text" id="" class="form-control me-1" placeholder="">
+                                        <span class="text-nowrap">
+                                            萬元
+                                        </span>
+                                    </div>
+                                </div>
+                                
+                        </div>
+                    </div>
+                    <legend class="col-form-label col-12 col-sm-3 pt-0 fw-bold">
+                        授權代收定金
+                    </legend>
+                    <div class="col-12 col-sm-9 mb-2">
+                        <div class="row g-2">
+                            <div class="col-auto">
+                                <input class="form-check-input" type="radio" name="subject2" id="">
+                                <label for="" class="mb-2">
+                                    同意
+                                </label>
+                            </div>
+                            <div class="col-auto">
+                                <input class="form-check-input" type="radio" name="subject2" id="">
+                                <label for="" class="mb-2">
+                                    不同意
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <legend class="col-form-label col-12 col-sm-3 pt-0 fw-bold">
+                        廣告張貼於標的
+                    </legend>
+                    <div class="col-12 col-sm-9 mb-2">
+                        <div class="row g-2">
+                            <div class="col-auto">
+                                <input class="form-check-input" type="radio" name="subject2" id="">
+                                <label for="" class="mb-2">
+                                    同意
+                                </label>
+                            </div>
+                            <div class="col-auto">
+                                <input class="form-check-input" type="radio" name="subject2" id="">
+                                <label for="" class="mb-2">
+                                    不同意
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset> 
+                <fieldset class="row pt-3">
+                    <legend class="col-form-label col-12 col-sm-3 pt-0 fw-bold">
+                        現況
+                    </legend>
+                    <div class="col-12 col-sm-9 mb-2">
+                        <div class="row g-2">
+                            <div class="col-auto">
+                                <input class="form-check-input" type="radio" name="subject2" id="">
+                                <label for="" class="mb-2">
+                                    空屋 
+                                </label>
+                            </div>
+                            <div class="col-auto">
+                                <input class="form-check-input" type="radio" name="subject2" id="">
+                                <label for="" class="mb-2">
+                                    自住
+                                </label>
+                            </div>
+                            <div class="col-auto">
+                                <input class="form-check-input" type="radio" name="subject2" id="">
+                                <label for="" class="mb-2">
+                                    出租
+                                </label>
+                            </div>
+                            <div class="col-auto">
+                                <div class="d-flex">
+                                    <div class="mx-1">
+                                        <input class="form-check-input" type="radio" name="subject2" id="">
+                                        <label for="" class="mb-2">
+                                            其他
+                                        </label>
+                                    </div>
+                                    <div class="col-8 ">
+                                        <input type="text" id="" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>                       
+                    </div>
+                    <legend class="col-form-label col-12 col-sm-3 pt-0 fw-bold">
+                        帶看方式
+                    </legend>
+                    <div class="col-12 col-sm-9 mb-2">
+                        <div class="row g-2">
+                            <div class="col-auto ">
+                                <input class="form-check-input" type="checkbox" name="subject2" id="">
+                                <label for="" class="mb-2">
+                                    鑰匙 
+                                </label>
+                            </div>
+                            <div class="col-auto ">
+                                <input class="form-check-input" type="checkbox" name="subject2" id="">
+                                <label for="" class="mb-2">
+                                    管理員
+                                </label>
+                            </div>
+                            <div class="col-auto">
+                                <input class="form-check-input" type="checkbox" name="subject2" id="">
+                                <label for="" class="mb-2">
+                                    約看
+                                </label>
+                            </div>
+                        </div>                       
+                    </div>
+                    <legend class="col-form-label col-12 col-sm-3 pt-0 fw-bold">
+                        交屋情況
+                    </legend>
+                    <div class="col-12 col-sm-9 mb-2">
+                        <div class="row g-2">
+                            <div class="col-auto">
+                                <input class="form-check-input" type="checkbox" name="subject2" id="">
+                                <label for="" class="mb-2">
+                                    立即 
+                                </label>
+                            </div>
+                            <div class="col-auto">
+                                <input class="form-check-input" type="checkbox" name="subject2" id="">
+                                <label for="" class="mb-2">
+                                    商談
+                                </label>
+                            </div>
+                        </div>                       
+                    </div>
+                </fieldset>
+                <div class="formtitle" >
+                    <br>
+                    <p class="fw-bold h1">個案資料表</p>
+                </div>
+                <fieldset  class="row pt-3">
+                    <label for="subject007" class="col-sm-3 col-form-label fw-bold">
+                        段別
+                    </label>
+                    <div class="col-12 col-sm-9">
+                        <div class="row g-2">
+                            <div class="col-12 col-sm-8 d-flex " style="">
+                                <div class=" p-2 col-auto text-nowrap flex-fill">
+                                    段名
+                                </div>
+                                <div class="col-4 flex-fill mx-1" >
+                                    <input type="text" class="form-control" placeholder="請輸入段號" >
+                                </div>
+                                <div class="col-5 flex-fill mx-1">
+                                    <select class="form-select" aria-label="">
+                                        <option value="1">自動拉段</option>
+                                        <option value="2">東豐段</option>
+                                        <option value="3">博愛段</option>
+                                    </select>
+                                </div> 
+                            </div>
+
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="row pt-3">
+                    <label for="subject007" class="col-sm-3 col-form-label fw-bold">
+                        建號
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"></path>
+                            </svg>
+                                
+                        </a>
+                    </label>
+                    <div class="col-12 col-sm-9">
+                        <div  class="col-12 col-sm-8 d-flex mb-4">
+                                <div class="me-2">
+                                    1
+                                </div>
+                                <div class="row g-2 me-2">                  
+                                        <div class="col-8 col-sm-auto">
+                                            <input type="text" class="form-control" placeholder="建號">
+                                        </div>                                        
+                                        <div class="col-auto">
+                                            <input class="form-check-input" type="checkbox" name="subject2" id="">
+                                            <label for="" class="">
+                                                獨立產權車位
+                                            </label>
+                                        </div>
+                                        <div class="col-12 fw-bold col-form-label">
+                                                出售權利範圍：
+                                        </div>
+                                        <div class=" col-auto d-flex ">
+                                            <div class="col-5 flex-fill">
+                                                <input type="text" class="form-control" >
+                                            </div>
+                                            <div class="col-auto p-2 text-nowrap ">
+                                                <label for="" class="">
+                                                        分之 
+                                                </label>
+                                            </div>
+                                            <div class="col-5 flex-fill">
+                                                <input type="text" class="form-control" >
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <input class="form-check-input" type="checkbox" name="subject2" id="">
+                                            <label for="" class="mb-2">
+                                                全部
+                                            </label>
+                                        </div>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle" viewBox="0 0 16 16">
+                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                            <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                        </div>
+                        <div  class="col-12 col-sm-8 d-flex mb-4">
+                            <div class="me-2">
+                                2
+                            </div>
+                            <div class="row g-2 me-2">                  
+                                    <div class="col-8 col-sm-auto">
+                                        <input type="text" class="form-control" placeholder="建號">
+                                    </div>     
+                                    <div class="col-auto">
+                                        <input class="form-check-input" type="checkbox" name="subject2" id="">
+                                        <label for="" class="">
+                                            公設
+                                        </label>
+                                    </div>                                   
+                                    <div class="col-auto">
+                                        <input class="form-check-input" type="checkbox" name="subject2" id="">
+                                        <label for="" class="">
+                                            獨立產權車位
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="col-12 fw-bold col-form-label">
+                                            出售權利範圍：
+                                    </div>
+                                    <div class=" col-auto d-flex ">
+                                        <div class="col-5 flex-fill">
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                        <div class="col-auto p-2 text-nowrap ">
+                                            <label for="" class="">
+                                                    分之 
+                                            </label>
+                                        </div>
+                                        <div class="col-5 flex-fill">
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <input class="form-check-input" type="checkbox" name="subject2" id="">
+                                        <label for="" class="mb-2">
+                                            全部
+                                        </label>
+                                    </div>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-outline-secondary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="row pt-3">
+                    <label for="subject007" class="col-sm-3 col-form-label fw-bold">
+                        地號
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"></path>
+                            </svg>
+                                
+                        </a>
+                    </label>
+                        
+                        <div class="col-12 col-sm-9">
+                            <div  class="col-12 col-sm-8 d-flex mb-4">
+                                <div class="me-2">
+                                    1
+                                </div>
+                                <div class="row g-2 me-2">                  
+                                        <div class="col-8 col-sm-auto">
+                                            <input type="text" class="form-control" placeholder="地號">
+                                        </div>                                        
+                                        <div class="col-auto">
+                                            <input class="form-check-input" type="checkbox" name="subject2" id="">
+                                            <label for="" class="">
+                                                獨立產權車位
+                                            </label>
+                                        </div>
+                                        <div class="col-12 fw-bold col-form-label">
+                                                出售權利範圍：
+                                        </div>
+                                        <div class=" col-auto d-flex ">
+                                            <div class="col-5 flex-fill">
+                                                <input type="text" class="form-control" >
+                                            </div>
+                                            <div class="col-auto p-2 text-nowrap ">
+                                                <label for="" class="">
+                                                        分之 
+                                                </label>
+                                            </div>
+                                            <div class="col-5 flex-fill">
+                                                <input type="text" class="form-control" >
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <input class="form-check-input" type="checkbox" name="subject2" id="">
+                                            <label for="" class="mb-2">
+                                                全部
+                                            </label>
+                                        </div>
+
+                                </div>
+                                <div>
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle" viewBox="0 0 16 16">
+                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                            <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div  class="col-12 col-sm-8 d-flex mb-4">
+                                <div class="me-2">
+                                    2
+                                </div>
+                                <div class="row g-2 me-2">                  
+                                        <div class="col-8 col-sm-auto">
+                                            <input type="text" class="form-control" placeholder="地號">
+                                        </div>                                        
+                                        <div class="col-auto">
+                                            <input class="form-check-input" type="checkbox" name="subject2" id="">
+                                            <label for="" class="">
+                                                獨立產權車位
+                                            </label>
+                                        </div>
+                                        <div class="col-12 fw-bold col-form-label">
+                                                出售權利範圍：
+                                        </div>
+                                        <div class=" col-auto d-flex ">
+                                            <div class="col-5 flex-fill">
+                                                <input type="text" class="form-control" >
+                                            </div>
+                                            <div class="col-auto p-2 text-nowrap ">
+                                                <label for="" class="">
+                                                        分之 
+                                                </label>
+                                            </div>
+                                            <div class="col-5 flex-fill">
+                                                <input type="text" class="form-control" >
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <input class="form-check-input" type="checkbox" name="subject2" id="">
+                                            <label for="" class="mb-2">
+                                                全部
+                                            </label>
+                                        </div>
+                                        <div class="col-auto">
+                                            <input class="form-check-input" type="checkbox" name="subject2" id="">
+                                            <label for="" class="mb-2">
+                                                同第一筆
+                                            </label>
+                                        </div>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle" viewBox="0 0 16 16">
+                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                            <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                </fieldset>
+                    <fieldset class="row pt-3">
+                        <label for="subject008" class="col-sm-3 col-form-label fw-bold">
+                            公設車位
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"></path>
+                                </svg>
+                            </a>
+                        </label>
+                        <div class="col-sm-8">
+                            <div class="input-group mb-2">
+                                <input type="text" aria-label="建    號"  placeholder="建    號" class="form-control">
+                                <input type="text" aria-label="車位編號"  placeholder="車位編號" class="form-control">
+                                <button type="button" class="btn btn-outline-secondary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"></path>
+                                    </svg>
+                                </button>
+                            </div>                            
+                        </div>
+                    </fieldset>
+                    <fieldset class="row pt-3">
+                        <legend class="col-form-label col-12 col-sm-3 pt-0 fw-bold">
+                            社區名稱
+                        </legend>
+                        <div class="col-12 col-sm-9 mb-2">
+                            <div class="row g-2">
+                                <div class=" col-12 col-sm-6">
+                                    <select class="form-select" name="ddl社區大樓" id="ddl社區大樓">
+                                        <option selected="selected" value="請選擇">請選擇</option>
+                                        <option value="125597">大富得居樂</option>
+                                        <option value="124020">大樁園2</option>
+                                        <option value="173504">大樁園2</option>
+                                        <option value="125587">大樁園NO2</option>
+                                        <option value="124004">中港大鎮</option>
+                                        <option value="124015">井上大院</option>
+                                        <option value="124003">東大璞玉</option>
+                                        <option value="173605">東海大別墅</option>
+                                        <option value="128071">東海大學城</option>
+                                        <option value="126107">英勝大榕園</option>
+                                        <option value="125084">御墅大街</option>
+                                        <option value="124018">富宇大地</option>
+                                        <option value="128077">華育大院</option>
+                                        <option value="126468">橙霖大院</option>
+                                        <option value="124885">龍鑫大悅</option>
+                                        <option value="173522">龍鑫大悅</option>
+                                        <option value="175107">麗水大院</option>
+                                
+                                    </select>                              
+                                </div>                             
+                            </div>
+                            <figcaption class="w1180 blockquote-footer">
+                                會像google輸入關鍵字就會自動出現(正式版會刪除的文字)
+                            </figcaption>
+                        </div>  
+                    </fieldset>
+                    <fieldset class="row pt-3">                     
+                        
+                        <legend class="col-form-label col-12 col-sm-3 pt-0 fw-bold">
+                            鑰匙編號
+                        </legend>
+                        <div class="col-12 col-sm-9 mb-2">
+                            <div class="row g-2">
+                                <div class="col-6 col-sm-6">
+                                    <input type="text" id="" class="form-control" placeholder="非必填">
+                                </div>
+                            </div>                       
+                        </div>
+                        <legend class="col-form-label col-12 col-sm-3 pt-0 fw-bold">
+                            網路案名
+                        </legend>
+                        <div class="col-12 col-sm-9 mb-2">
+                            <div class="row g-2">
+                                <div class="col-12 col-sm-8">
+                                    <input type="text" id="" class="form-control" placeholder="限40字">
+                                </div>
+                            </div>                       
+                        </div>
+                        <legend class="col-form-label col-12 col-sm-3 pt-0 fw-bold">
+                            簡短案名
+                        </legend>
+                        <div class="col-12 col-sm-9 mb-2">
+                            <div class="row g-2">
+                                <div class="col-6 col-sm-6">
+                                    <input type="text" id="" class="form-control" placeholder="限15字">
+                                </div>
+                                <div  class="col-auto">
+                                    <input class="form-check-input" type="checkbox" name="subject2" id="">
+                                    <label for="" class="mb-2">
+                                        同上
+                                    </label>
+                                </div>
+                                <small class="col-12 text-success">
+                                    用於張貼卡及型錄列印
+                                </small>
+                            </div>                       
+                        </div>
+                    </fieldset>
+                    <fieldset class="row pt-3">
+                        <label class="col-sm-3 col-form-label fw-bold">
+                            登記用途
+                        </label>
+                        <div class="col col-sm-9">
+                            <div class="col-12 ">
+                                <input type="text" class="form-control" >
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="row pt-3">
+                        <label class="col-sm-3 col-form-label fw-bold">
+                            建築完成日期
+                        </label>
+                        <div class="col col-sm-9">
+                            <div class="row g-2" >
+                                <div class="col-4  col-sm-3 mx-1">
+                                    <input type="text" id="" class="form-control" placeholder="YYYMMDD">
+                                </div> 
+                                <div>
+                                    <input class="form-check-input" type="checkbox" name="subject401" id="subject401">
+                                    <label for="subject401">空白且查無使用執照及測量成果圖</label>
+                                </div>
+                            </div> 
+                        </div>
+                    </fieldset>
+                    <fieldset class="row pt-3">
+                        <label class="col-sm-3 col-form-label fw-bold">
+                            樓層數
+                        </label>
+                        <div class="col col-sm-9">
+                            <div class="row g-2" >
+                                <div class="col-auto col-form-label">
+                                    地上
+                                </div> 
+                                <div class="col-2 col-sm-2 ">
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-auto col-form-label">
+                                    地下
+                                </div> 
+                                <div class="col-2 col-sm-2 ">
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-12 col-sm-6 d-flex">
+                                    <div class="col-form-label">
+                                        所在
+                                    </div> 
+                                    &ensp;
+                                    <div class=" ">
+                                        <input type="text" class="form-control" placeholder="整棟出售 填寫全" >
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <label class="col-sm-3 col-form-label fw-bold">
+                            每層戶數
+                        </label>
+                        <div class="col col-sm-9">
+                            <div class="row g-2" >
+                                <div class="col-3 col-sm-2 ">
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-auto col-form-label">
+                                    戶
+                                </div> 
+                                
+                                <div class="col-4 col-sm-3 ">
+                                    <input type="text" class="form-control" placeholder="無輸入0" >
+                                </div>
+                                <div class="col-auto col-form-label">
+                                    部電梯
+                                </div> 
+                            </div> 
+                        </div>
+                        <label class="col-sm-3 col-form-label fw-bold">
+                            中庭花園
+                        </label>
+                        <div class="col-12 col-sm-9 mb-2">
+                            <div class="row g-2">
+                                <div class="col-auto">
+                                    <input class="form-check-input" type="radio" name="subject2" id="">
+                                    <label for="" class="mb-2">
+                                        無
+                                    </label>
+                                </div>
+                                <div class="col-auto">
+                                    <input class="form-check-input" type="radio" name="subject2" id="">
+                                    <label for="" class="mb-2">
+                                        有
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="row pt-3">
+                        <label class="col-sm-3 col-form-label fw-bold">
+                            臨路
+                        </label>
+                        <div class="col-12 col-sm-3 mb-2">
+                            <div class="row g-2">
+                                <div class="col-auto col-form-label">
+                                    寬
+                                </div> 
+                                
+                                <div class="col-6">
+                                    <input type="text" class="form-control" placeholder="無輸入0" >
+                                </div>
+                                <div class="col-auto col-form-label">
+                                    米
+                                </div> 
+                            </div>
+                        </div>
+                        <label class="col-sm-3 col-form-label fw-bold">
+                            面
+                        </label>
+                        <div class="col-12 col-sm-3 mb-2">
+                            <div class="row g-2">
+                                <div class="col-auto col-form-label">
+                                    寬
+                                </div> 
+                                
+                                <div class="col-6">
+                                    <input type="text" class="form-control" placeholder="無輸入0" >
+                                </div>
+                                <div class="col-auto col-form-label">
+                                    米
+                                </div> 
+                            </div>
+                        </div>
+                        <label class="col-sm-3 col-form-label fw-bold">
+                            縱
+                        </label>
+                        <div class="col-12 col-sm-3 mb-2">
+                            <div class="row g-2">
+                                <div class="col-auto col-form-label">
+                                    深
+                                </div> 
+                                <div class="col-6">
+                                    <input type="text" class="form-control" placeholder="無輸入0" >
+                                </div>
+                                <div class="col-auto col-form-label">
+                                    米
+                                </div> 
+                            </div>
+                        </div>
+                        <label class="col-sm-3 col-form-label fw-bold">
+                            座向
+                        </label>
+                        <div class="col-12 col-sm-3 mb-2">
+                            <div class="row g-2">
+                                <div class="col-auto">
+                                    <select  class="form-select" name="DropDownList22" id="DropDownList22">
+                                        <option value="暫未調查">暫未調查</option>
+                                        <option value="座北朝南">座北朝南</option>
+                                        <option value="座南朝北">座南朝北</option>
+                                        <option value="座東朝西">座東朝西</option>
+                                        <option value="座西朝東">座西朝東</option>
+                                        <option value="座東南朝西北">座東南朝西北</option>
+                                        <option value="座西南朝東北">座西南朝東北</option>
+                                        <option value="座東北朝西南">座東北朝西南</option>
+                                        <option value="座西北朝東南">座西北朝東南</option>
+                                        <option value="其它">其它</option>
+                                    
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="row pt-3">
+                        <label class="col-sm-3 col-form-label fw-bold">
+                            社區養寵物 
+                        </label>
+                        <div class="col-12 col-sm-9 mb-2">
+                            <div class="row g-2">
+                                <div class="col-12 ">
+                                    <input class="form-check-input" type="radio" name="subject2" id="">
+                                    <label for="" class="mb-2">
+                                        無法飼養
+                                    </label>
+                                </div>
+                                <div class="col-12 ">
+                                    <input class="form-check-input" type="radio" name="subject2" id="">
+                                    <label for="" class="mb-2">
+                                        可飼養 
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="row pt-3">
+                        <legend class="col-form-label col-12 col-sm-3 pt-0 fw-bold">
+                            主要建材
+                        </legend>
+                        <div class="col-12 col-sm-9 mb-2">
+                            <div class="row g-2">
+                                <div class="col-12 col-sm-6 d-flex">
+                                    <div class="col-auto px-1">
+                                        外牆外飾
+                                    </div>
+                                    <div class="col-4 ">
+                                        <select class="form-select" name="DropDownList43" id="DropDownList43">
+                                            <option value=""></option>
+                                            <option value="二丁掛">二丁掛</option>
+                                            <option value="方塊磚">方塊磚</option>
+                                            <option value="馬賽克">馬賽克</option>
+                                            <option value="洗石子">洗石子</option>
+                                            <option value="玻璃帷幕">玻璃帷幕</option>
+                                            <option value="山型磚">山型磚</option>
+                                            <option value="其他">其他</option>
+                                        
+                                        </select>
+                                    </div>
+                                    <div class="col-4  px-1 ">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 d-flex">
+                                    <div class="col-auto px-1">
+                                        室內建材
+                                    </div>
+                                    <div class="col-4 ">
+                                        <select class="form-select" name="DropDownList48" onchange="javascript:setTimeout('__doPostBack(\'DropDownList48\',\'\')', 0)" id="DropDownList48">
+                                            <option selected="selected" value=""></option>
+                                            <option value="油漆">油漆</option>
+                                            <option value="壁紙">壁紙</option>
+                                            <option value="木板">木板</option>
+                                            <option value="磁磚">磁磚</option>
+                                            <option value="其他">其他</option>
+                                    
+                                        </select>
+                                    </div>
+                                    <div class="col-4  px-1 ">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6  d-flex">
+                                    <div class="col-auto px-1">
+                                        隔間材料
+                                    </div>
+                                    <div class="col-4 ">
+                                        <select class="form-select" name="DropDownList49" onchange="javascript:setTimeout('__doPostBack(\'DropDownList49\',\'\')', 0)" id="DropDownList49">
+                                            <option selected="selected" value=""></option>
+                                            <option value="磚牆">磚牆</option>
+                                            <option value="木材">木材</option>
+                                            <option value="木板磚牆">木板磚牆</option>
+                                            <option value="輕隔間">輕隔間</option>
+                                            <option value="水泥">水泥</option>
+                                            <option value="其他">其他</option>
+                                    
+                                        </select>
+                                    </div>
+                                    <div class="col-4  px-1 ">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6  d-flex">
+                                    <div class="col-auto px-1">
+                                        地板
+                                    </div>
+                                    <div class="col-5 ">
+                                        <select class="form-select" name="DropDownList44" id="DropDownList44">
+                                            <option value=""></option>
+                                            <option value="木板">木板</option>
+                                            <option value="磨石子">磨石子</option>
+                                            <option value="大理石">大理石</option>
+                                            <option value="磁磚">磁磚</option>
+                                            <option value="塑膠磚">塑膠磚</option>
+                                            <option value="花崗石">花崗石</option>
+                                            <option value="拋光磚">拋光磚</option>
+                                            <option value="地磚">地磚</option>
+                                            <option value="其他">其他</option>
+                                        
+                                        </select>
+                                    </div>
+                                    <div class="col-4  px-1 ">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="row pt-3">
+                        <legend class="col-form-label col-12 col-sm-3 pt-0 fw-bold">
+                            周邊環境
+                        </legend>
+                        <div class="col-12 col-sm-9 mb-2">
+                            <div class="row g-2">
+                                <div class="col-12 d-flex">
+                                    <div class="col-auto px-1">
+                                        商圈資訊
+                                    </div>
+                                    <div class="col-4 ">
+                                        <select class="form-select" name="DropDownList43" id="DropDownList43">
+                                            <option selected="selected" value=""></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex">
+                                    <div class="col-auto px-1">
+                                        公園綠地
+                                    </div>
+                                    <div class="col-4 ">
+                                        <select class="form-select" name="DropDownList43" id="DropDownList43">
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 fw-bold">
+                                    捷運站名
+                                </div>
+                                <div class="col-12 d-flex">
+                                    <div class="col-auto px-1">
+                                        路線
+                                    </div>
+                                    <div class="col-4 me-1">
+                                        <select class="form-select" name="DropDownList43" id="DropDownList43">  
+                                            
+                                            <option value="紅線">紅線</option>
+                                            <option value="綠線">綠線</option>  
+                                            <option value="黃線">黃線</option>                                     
+                                        </select>
+                                    </div>
+                                    <div class="col-4 ">
+                                        <select class="form-select" name="DropDownList43" id="DropDownList43">
+                                            <option value="黃線">淡水</option>
+                                            <option value="紅線">紅樹林</option>
+                                            <option value="綠線">北投</option> 
+                                        
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex">
+                                    <div class="col-auto px-1">
+                                        公車站牌
+                                    </div>
+                                    <div class="col-4 ">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex">
+                                    <div class="col-auto px-1">
+                                        國小
+                                    </div>
+                                    <div class="col-4 ">
+                                        <select class="form-select" name="DropDownList43" id="DropDownList43">
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex">
+                                    <div class="col-auto px-1">
+                                        國中
+                                    </div>
+                                    <div class="col-4 ">
+                                        <select class="form-select" name="DropDownList43" id="DropDownList43">
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex">
+                                    <div class="col-auto px-1">
+                                        高中
+                                    </div>
+                                    <div class="col-4 ">
+                                        <select class="form-select" name="DropDownList43" id="DropDownList43">
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex">
+                                    <div class="col-auto px-1">
+                                        大學
+                                    </div>
+                                    <div class="col-4 ">
+                                        <select class="form-select" name="DropDownList43" id="DropDownList43">
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 ">
+                                    <div class="col-12 ">
+                                        特色訴求
+                                    </div>
+                                    <div class="col-12 ">
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12 ">
+                                    <div class="col-auto px-1">
+                                        備註
+                                    </div>
+                                    <div class="col-12 ">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </fieldset>  
+                    <fieldset class="row pt-3">
+                        <label class="col-sm-3 col-form-label fw-bold">
+                            照片
+                        </label>
+                        <div class="col col-sm-9">
+                            <div class="col-12 ">
+                                <div class="input-group ">
+                                    <input type="file" class="form-control" id="inputGroupFile01" >                            
+                                </div>  
+                                <small class="text-success">附件上傳</small>
+                            </div>
+                        </div>
+                        <label class="col-sm-3 col-form-label fw-bold">
+                            格局圖
+                        </label>
+                        <div class="col col-sm-9">
+                            <div class="col-12 ">
+                                <div class="input-group ">
+                                    <input type="file" class="form-control" id="inputGroupFile01">                            
+                                </div>  
+                                <small class="text-success">附件上傳</small>
+                            </div>
+                        </div>
+                    </fieldset>                  
+                    <div class="formtitle text-center">
+                        <br>
+                        
+                        <a href="index.html">
+                            <button type="button" class="btn btn-primary btn-lg">下一頁</button>
+                        </a>
+                        <br>
+                    </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div style="height: 100px; " id="footer"></div>
+    </footer>
+    <script>
+        window.addEventListener('DOMContentLoaded', function(){
+            var intputElements = document.querySelectorAll('input');
+            for(var i = 0; i<intputElements.length; i++) {
+                var id= 'input' + (i+1);
+                intputElements[i].id=id;
+            }
+        });
+    
+    </script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+        $('label').click(function(){
+                $(this).prev('input').click()
+            })
+    </script>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+    -->
+    </body>
+</html>
