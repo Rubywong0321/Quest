@@ -96,8 +96,7 @@
                                             <div class="col-12 ">
                                                 <input class="form-check-input" type="radio" name="subject01" value="option2">
                                                 <label class="form-check-label mb-2">
-                                                    有，說明出租或出借情形
-                                                    
+                                                    有                                                   
                                                 </label>
                                             </div>
                                             <div class="col-12 ">
@@ -367,9 +366,18 @@
                                         <div class="col-4  col-sm-3 ">
                                             <input type="text" id="" class="form-control" placeholder="">
                                         </div>
-                                        <div class="col-6  col-md-2 form-check-label">
-                                            (先生/小姐)
-                                        </div>  
+                                        <div class="col-auto ps-5">
+                                                <input class="form-check-input" type="radio" name="subjectAAAA" value="option1">
+                                                <label class="form-check-label">
+                                                    先生
+                                                </label>
+                                        </div>
+                                        <div class="col-auto ps-5">
+                                                <input class="form-check-input" type="radio" name="subjectAAAA" value="option1">
+                                                <label class="form-check-label">
+                                                    小姐
+                                                </label>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="form-check">
@@ -377,7 +385,7 @@
                                         <label class="form-check-label ">
                                             訪談日期(年月日)  
                                         </label>    
-                                        <div class="col-4  col-sm-3 ">
+                                        <div class="col-6  col-sm-3 ">
                                             <input type="text" id="" class="form-control" placeholder="YYYMMDD">
                                         </div>
                                     </div>                                 
@@ -1358,13 +1366,13 @@
                                 <div class="form-check">
                                     <div class="row g-2">
                                         <div class="col-12">
-                                            <input class="form-check-input" type="radio" name="subjectAA" value="option1" >
+                                            <input class="form-check-input" type="radio" name="subjectBA" value="option1" >
                                             <label class="form-check-label">
                                                 無
                                             </label>                                             
                                         </div>
                                         <div class="col-auto ">
-                                            <input class="form-check-input" type="radio" name="subjectAA" value="option1" >
+                                            <input class="form-check-input" type="radio" name="subjectBA" value="option1" >
                                             <label class="form-check-label">
                                                     有，範圍：
                                             </label> 
@@ -1373,14 +1381,14 @@
                                         <div class="form-check">
                                             <div class="row g-2">
                                                 <div class="col-auto">
-                                                    <input class="form-check-input" type="checkbox" name="" value="option1" >
+                                                    <input class="form-check-input" type="checkbox" name="subjectBB" value="option1" >
                                                     <label class="form-check-label">
                                                         建物
                                                     </label> 
                                                     &emsp;  
                                                 </div>
                                                 <div class="col-auto">
-                                                    <input class="form-check-input" type="checkbox" name="" value="option1" >
+                                                    <input class="form-check-input" type="checkbox" name="subjectBB" value="option1" >
                                                     <label class="form-check-label">
                                                         建物(含車位) 
                                                     </label>
@@ -1536,7 +1544,7 @@
                                                 </div>
                                             </div>
                                             <small class="text-danger">
-                                                表單填完請提示補附件：租約
+                                                表單填完上傳租約
                                                 <br>
                                                 僅車位出租時請填”無”，於車位輸入表填寫
                                             </small>
@@ -2852,15 +2860,21 @@
                                                 <input type="text" class="form-control me-2">
                                                 ㎡
                                             </div>
-                                            <div class="col-12 d-sm-flex mb-2" >
-                                                <div class="me-2">
+                                            <div class="col-12 mb-2" >
+                                                <div class="col-12">
                                                     <input class="form-check-input" type="checkbox" name="subjectCF" value="option1" >
                                                     <label class="form-check-label ">
                                                         延一樓空地向上增建作室內面積使用，   約                                                
                                                     </label>       
                                                 </div>
-                                                <input type="text" class="form-control me-2">
-                                                ㎡
+                                                <div class="d-flex">
+                                                    <div class="col-10 me-2">
+                                                        <input type="text" class="form-control ">
+                                                    </div>
+                                                    <div class="col-2">
+                                                        ㎡
+                                                    </div>
+                                                </div>                                               
                                             </div>
                                             <div class="col-12 col-sm-7 d-flex mb-2" >
                                                 <div class="me-2">
@@ -2879,7 +2893,9 @@
                                     <label class="form-check-label">
                                         <div class="fw-bold">
                                             增建列管情形或曾發生糾紛
+                                    
                                         </div>
+                                    </label>
                                         <small class="text-success">
                                             問屋主/網路查詢各縣市「違建查報」公開資訊/致電工務局
                                         </small>
@@ -2925,7 +2941,10 @@
                                             
                                             
                                         </div>
-                                    </label>
+                                   
+                                    <div class="input-group mb-3">
+                                        <input type="file" class="form-control">                            
+                                    </div>
                                 </div>
                                 
                             </div>
@@ -3572,7 +3591,7 @@
                                 </div>
                                 <div class="form-check">
                                     <div class="text-danger ">
-                                        表單填完請提示補附件-照片檔
+                                        上傳附贈設備照片
                                     </div>
                                     <div class="input-group mb-3">
                                         <input type="file" class="form-control">                            
@@ -4302,7 +4321,7 @@
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="subjectTC" value="option1">
                                             <label class="form-check-label">
-                                                公寓 (含五層以下)
+                                                公寓 (五樓含以下無電梯)
                                             </label>
                                         </div>
                                         <div class="form-check">
@@ -4327,19 +4346,19 @@
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="subjectTC" value="option1">
                                             <label class="form-check-label">
-                                                住宅或複合式大樓 (含十一層以上，有電梯) 
+                                                住宅或複合式大樓 (十一層含以上有電梯) 
                                             </label>
                                         </div>
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="subjectTC" value="option1">
                                             <label class="form-check-label">
-                                                華夏 (含十層以下有電梯)     
+                                                華夏 (十層含以下有電梯)     
                                             </label>
                                         </div>
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="subjectTC" value="option1">
                                             <label class="form-check-label">
-                                                套房 (一房、一廳、一衛)    
+                                                套房（一房、一廳、一衛）等   
                                             </label>
                                         </div>
                                    
@@ -4385,12 +4404,7 @@
                                 </small>                            
                             </legend>
                             <div class="col-sm-9">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="subjectEE" value="option1">
-                                    <label class="form-check-label">
-                                        無
-                                    </label>
-                                </div>
+
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="subjectEE" value="option1">
                                     <label class="form-check-label">
@@ -4422,12 +4436,12 @@
                                                 室
                                             </div>
                                         </div>
-                                    
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="subjectEE" value="option1">
-                                    <label class="form-check-label">
-                                        開放格局
+                                </div>  
+                                <div class="form-check">       
+                                        <input class="form-check-input" type="checkbox" name="subjectEE" value="option1">
+                                        <label class="form-check-label">
+                                            加蓋格局
+                                        </label>
                                         <div class="row g-2">
                                             <div class="col-4 col-sm-2">
                                                 <input type="text" class="form-control">
@@ -4454,8 +4468,13 @@
                                                 室
                                             </div>
                                         </div>
-                                    </label>
                                 </div>
+                                <div class="form-check">       
+                                    <input class="form-check-input" type="radio" name="subjectEE" value="option1">
+                                    <label class="form-check-label">
+                                        開放空間
+                                    </label>
+                            </div>
                             </div>
                         </fieldset>
                         <fieldset class="row pt-3 ">
@@ -5574,7 +5593,7 @@
                                             <div class="form-check-label col-auto me-2">
                                                 淨高
                                             </div>
-                                            <div class="col-4 col-sm-3 me-2">
+                                            <div class="col-6 col-sm-3 me-2">
                                                 <input type="number" class="form-control"  placeholder="機械車位必填">
                                             </div>
                                             <div class="form-check-label col-auto">
@@ -5842,25 +5861,25 @@
                                                 存續期間
                                             </div>
                                             <div class="col-12">
-                                                <input class="form-check-input" type="radio" name="subjectAA" value="option1" >
+                                                <input class="form-check-input" type="radio" name="subjectZW" value="option1" >
                                                 <label class="form-check-label">
                                                     不定期   
                                                 </label>
                                             </div>
                                             <div class="col-12">
-                                                <input class="form-check-input" type="radio" name="subjectAA" value="option1" >
+                                                <input class="form-check-input" type="radio" name="subjectZW" value="option1" >
                                                 <label class="form-check-label">
                                                     定期，契約有無公證 
                                                 </label>
                                             </div>
                                             <div class="col-auto me-5">
-                                                <input class="form-check-input" type="radio" name="subjectAA" value="option1" >
+                                                <input class="form-check-input" type="radio" name="subjectZS" value="option1" >
                                                 <label class="form-check-label">
                                                     有 
                                                 </label>
                                             </div>
                                             <div class="col-auto ">
-                                                <input class="form-check-input" type="radio" name="subjectAA" value="option1" >
+                                                <input class="form-check-input" type="radio" name="subjectZS" value="option1" >
                                                 <label class="form-check-label">
                                                     無
                                                 </label>
@@ -5911,13 +5930,13 @@
                                                 </label>
                                             </div>
                                             <div class="col-4 col-sm-2">
-                                                <input type="text" placeholder="年/月" class="form-control ">
+                                                <input type="text" placeholder="YYYMMDD" class="form-control ">
                                             </div> 
                                             <div class="col-auto">
                                                 至
                                             </div>
                                             <div class="col-4 col-sm-2">
-                                                <input type="text" placeholder="年/月" class="form-control ">
+                                                <input type="text" placeholder="YYYMMDD" class="form-control ">
                                             </div> 
 
                                         </div>
@@ -5940,13 +5959,13 @@
                                             </div>
                                             <div class="form-check">
                                                 <div class="col-12">
-                                                    <input class="form-check-input" type="radio" name="subjectAA" value="option1" >
+                                                    <input class="form-check-input" type="radio" name="subjectZE" value="option1" >
                                                     <label class="form-check-label">
                                                         租方配合換約，租賃權利義務隨同移轉
                                                     </label>
                                                 </div>
                                                 <div class="col-12">
-                                                    <input class="form-check-input" type="radio" name="subjectAA" value="option1" >
+                                                    <input class="form-check-input" type="radio" name="subjectZE" value="option1" >
                                                     <label class="form-check-label">
                                                         不可換約
                                                     </label>
@@ -5955,8 +5974,11 @@
                                         </div>
                                     </div>
                                     <small class="text-success">
-                                        有-表單填完請提示補附件：租約
+                                        表單填完上傳租約
                                     </small>
+                                    <div class="input-group mb-3">
+                                        <input type="file" class="form-control">                            
+                                    </div>
                                 </div>
 
                             </div>
